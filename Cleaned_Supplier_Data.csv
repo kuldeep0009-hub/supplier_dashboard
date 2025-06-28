@@ -1,0 +1,511 @@
+product_id,product_name,supplier_id,supplier_name,region,purchase_date,units_purchased,unit_cost,total_cost,delivery_time_days,qc_pass_rate,customer_rating_avg,damaged_on_arrival,complaint_count,units_returned,return_rate,supplier_score,supplier_rank
+P1,Dawat Rice,S1,Martin-Mcdowell,Mumbai,2025-01-11,971,16.55,16070.05,6,0.97,4.41,0.0,2,62,0.064,94.1951411922904,1.0
+P1,Dawat Rice,S2,Nelson-Ramirez,Mumbai,2025-03-14,689,38.8,26733.2,7,0.98,3.78,0.0,6,25,0.036,88.4085880770955,2.0
+P1,Dawat Rice,S3,"Bell, Gardner and Brown",Kolkata,2025-04-29,814,37.38,30427.32,7,0.93,3.86,0.01,5,35,0.043,87.4068310174809,3.0
+P1,Dawat Rice,S3,"Bell, Gardner and Brown",Mumbai,2024-12-30,990,23.38,23146.2,3,0.91,3.17,0.05,9,84,0.085,86.3144374719857,4.0
+P1,Dawat Rice,S4,Thornton Ltd,Kolkata,2025-06-02,406,64.58,26219.48,2,0.85,3.2,0.03,2,16,0.039,77.2509099058718,5.0
+P1,Dawat Rice,S5,Bass Group,Hyderabad,2024-10-02,432,81.03,35004.96,1,0.92,3.17,0.03,4,22,0.051,74.8642223218288,6.0
+P10,Tata Tea,S6,"Murphy, Aguilar and Zimmerman",Hyderabad,2024-11-24,477,11.02,5256.54,8,0.92,3.11,0.01,8,33,0.069,90.0344957418198,1.0
+P10,Tata Tea,S7,Flores-Cook,Ahmedabad,2025-01-28,514,36.38,18699.32,1,0.98,3.03,0.0,5,10,0.019,87.2109457642313,2.0
+P10,Tata Tea,S8,Thompson Group,Bengaluru,2025-04-20,813,43.1,35040.3,9,0.94,4.27,0.03,10,62,0.076,86.414894666069,3.0
+P10,Tata Tea,S9,Bond-Adkins,Ahmedabad,2024-12-11,378,54.25,20506.5,6,0.92,3.35,0.02,5,34,0.09,80.3360152398028,4.0
+P10,Tata Tea,S10,"Terry, Smith and Weber",Kolkata,2025-04-08,206,76.38,15734.28,10,0.92,3.45,0.02,8,6,0.029,77.5063558942179,5.0
+P10,Tata Tea,S5,Bass Group,Kolkata,2024-07-07,949,83.54,79279.46,7,0.89,3.34,0.03,4,1,0.001,75.5616943074854,6.0
+P11,Oreo Biscuit,S8,Thompson Group,Delhi NCR,2024-07-02,420,21.22,8912.4,5,0.99,4.74,0.03,5,9,0.021,95.6285253249664,1.0
+P11,Oreo Biscuit,S8,Thompson Group,Mumbai,2024-08-10,921,11.39,10490.19,4,0.99,3.86,0.05,4,20,0.022,94.9615732855222,2.0
+P11,Oreo Biscuit,S6,"Murphy, Aguilar and Zimmerman",Ahmedabad,2024-07-22,710,13.29,9435.9,2,0.92,4.13,0.0,0,19,0.027,93.9457552666966,3.0
+P11,Oreo Biscuit,S4,Thornton Ltd,Hyderabad,2025-05-28,373,20.86,7780.78,1,0.92,3.41,0.02,4,19,0.051,89.1692066337965,4.0
+P11,Oreo Biscuit,S1,Martin-Mcdowell,Hyderabad,2025-04-06,822,26.61,21873.42,7,0.88,3.74,0.02,6,19,0.023,88.7105468399821,5.0
+P11,Oreo Biscuit,S6,"Murphy, Aguilar and Zimmerman",Kolkata,2025-05-06,153,35.98,5504.94,6,0.9,4.44,0.01,1,10,0.065,88.0505916629314,6.0
+P11,Oreo Biscuit,S8,Thompson Group,Bengaluru,2025-01-24,720,42.35,30492.0,9,0.89,4.62,0.04,1,49,0.068,86.5229807261318,7.0
+P11,Oreo Biscuit,S3,"Bell, Gardner and Brown",Delhi NCR,2025-03-10,786,40.08,31502.88,9,0.97,3.21,0.0,1,54,0.069,85.1717212012551,8.0
+P11,Oreo Biscuit,S8,Thompson Group,Ahmedabad,2024-12-12,813,62.05,50446.65,5,0.86,3.93,0.03,8,16,0.02,80.8279202151502,9.0
+P11,Oreo Biscuit,S9,Bond-Adkins,Chennai,2024-07-19,803,68.68,55150.04,5,0.88,4.42,0.01,8,62,0.077,79.8020394441954,10.0
+P12,Garnier Facewash,S7,Flores-Cook,Hyderabad,2025-03-24,506,18.95,9588.7,1,0.89,4.44,0.04,6,1,0.002,93.2072658000896,1.0
+P12,Garnier Facewash,S2,Nelson-Ramirez,Chennai,2025-03-04,448,17.64,7902.72,5,1.0,3.75,0.02,9,44,0.098,91.5008561183326,2.0
+P12,Garnier Facewash,S10,"Terry, Smith and Weber",Bengaluru,2025-01-31,314,20.98,6587.72,5,0.92,3.07,0.05,10,4,0.013,88.9623128641865,3.0
+P12,Garnier Facewash,S4,Thornton Ltd,Hyderabad,2024-10-31,529,45.32,23974.28,10,0.97,3.88,0.02,2,26,0.049,86.4073599282833,4.0
+P12,Garnier Facewash,S6,"Murphy, Aguilar and Zimmerman",Chennai,2024-10-12,370,51.05,18888.5,1,0.97,3.4,0.03,7,34,0.092,82.2931824294039,5.0
+P12,Garnier Facewash,S5,Bass Group,Hyderabad,2024-11-23,471,75.54,35579.34,5,0.92,4.38,0.02,2,13,0.028,80.5146122814881,6.0
+P12,Garnier Facewash,S10,"Terry, Smith and Weber",Hyderabad,2024-11-21,665,66.51,44229.15,9,0.86,4.75,0.05,6,58,0.087,80.0783684446437,7.0
+P12,Garnier Facewash,S4,Thornton Ltd,Chennai,2024-10-06,707,72.46,51229.22,2,0.93,3.5,0.02,7,64,0.091,76.9248857014792,8.0
+P12,Garnier Facewash,S9,Bond-Adkins,Chennai,2025-04-04,751,79.25,59516.75,4,0.88,3.65,0.02,9,32,0.043,76.0431465710444,9.0
+P12,Garnier Facewash,S2,Nelson-Ramirez,Bengaluru,2025-05-18,940,86.6,81404.0,4,0.9,3.34,0.03,3,3,0.003,75.0659031824294,10.0
+P13,Surf Excel Detergent,S1,Martin-Mcdowell,Chennai,2025-02-18,106,12.39,1313.34,6,0.94,4.88,0.03,4,6,0.057,95.6974585387718,1.0
+P13,Surf Excel Detergent,S8,Thompson Group,Mumbai,2024-08-04,564,28.89,16293.96,6,0.98,3.41,0.01,2,23,0.041,89.2695652173913,2.0
+P13,Surf Excel Detergent,S10,"Terry, Smith and Weber",Delhi NCR,2024-07-10,324,35.28,11430.72,3,0.93,3.28,0.04,8,31,0.096,84.2474719856567,3.0
+P13,Surf Excel Detergent,S7,Flores-Cook,Ahmedabad,2025-03-10,683,72.18,49298.94,4,0.91,4.87,0.01,9,5,0.007,83.2176378305693,4.0
+P13,Surf Excel Detergent,S1,Martin-Mcdowell,Bengaluru,2024-12-16,509,46.81,23826.29,4,0.88,3.31,0.01,2,41,0.081,81.2534289556253,5.0
+P13,Surf Excel Detergent,S4,Thornton Ltd,Ahmedabad,2024-12-29,439,65.35,28688.65,1,1.0,3.28,0.03,1,16,0.036,81.158341550874,6.0
+P13,Surf Excel Detergent,S7,Flores-Cook,Delhi NCR,2025-03-31,665,63.32,42107.8,5,0.86,4.22,0.01,10,46,0.069,80.1432944867772,7.0
+P13,Surf Excel Detergent,S10,"Terry, Smith and Weber",Delhi NCR,2024-08-29,385,94.25,36286.25,2,0.95,4.14,0.0,4,22,0.057,75.6814253697893,8.0
+P13,Surf Excel Detergent,S2,Nelson-Ramirez,Ahmedabad,2024-11-28,612,86.47,52919.64,9,0.89,3.9,0.01,7,28,0.046,75.4350380995069,9.0
+P13,Surf Excel Detergent,S5,Bass Group,Chennai,2024-09-12,979,96.73,94698.67,8,0.98,3.59,0.02,3,25,0.026,74.9556207978485,10.0
+P14,Britania marrie biscuit,S4,Thornton Ltd,Bengaluru,2024-10-27,438,20.58,9014.04,6,0.95,4.49,0.03,7,17,0.039,93.4819587628866,1.0
+P14,Britania marrie biscuit,S4,Thornton Ltd,Chennai,2024-10-11,109,33.87,3691.83,2,0.89,4.95,0.02,1,2,0.018,91.1134737785746,2.0
+P14,Britania marrie biscuit,S3,"Bell, Gardner and Brown",Mumbai,2025-01-27,385,35.64,13721.4,8,0.86,4.22,0.03,3,4,0.01,87.9167906768265,3.0
+P14,Britania marrie biscuit,S7,Flores-Cook,Mumbai,2024-08-31,243,28.15,6840.45,1,0.87,3.33,0.04,0,9,0.037,86.2654101299866,4.0
+P14,Britania marrie biscuit,S8,Thompson Group,Chennai,2024-08-02,438,43.72,19149.36,9,0.94,4.01,0.04,7,26,0.059,85.9059435230838,5.0
+P14,Britania marrie biscuit,S8,Thompson Group,Delhi NCR,2024-07-18,793,35.79,28381.47,3,0.94,3.06,0.0,9,72,0.091,84.273173464814,6.0
+P14,Britania marrie biscuit,S10,"Terry, Smith and Weber",Hyderabad,2025-03-16,994,58.37,58019.78,7,0.99,3.69,0.02,0,36,0.036,83.8026624831914,7.0
+P14,Britania marrie biscuit,S3,"Bell, Gardner and Brown",Chennai,2025-05-18,350,62.82,21987.0,9,0.96,3.86,0.01,6,11,0.031,82.8153518601524,8.0
+P14,Britania marrie biscuit,S2,Nelson-Ramirez,Ahmedabad,2025-05-03,682,71.63,48851.66,10,0.87,4.82,0.04,0,12,0.018,81.5609009412819,9.0
+P14,Britania marrie biscuit,S6,"Murphy, Aguilar and Zimmerman",Bengaluru,2024-08-17,721,79.3,57175.3,6,0.88,4.25,0.0,7,56,0.078,76.9819408337069,10.0
+P15,Dove shampoo,S7,Flores-Cook,Delhi NCR,2025-06-22,638,13.3,8485.4,8,0.89,4.43,0.04,0,18,0.028,93.663514119229,1.0
+P15,Dove shampoo,S10,"Terry, Smith and Weber",Ahmedabad,2024-08-23,445,20.63,9180.35,7,0.95,4.26,0.04,4,26,0.058,92.1107530255491,2.0
+P15,Dove shampoo,S1,Martin-Mcdowell,Ahmedabad,2024-07-03,138,11.66,1609.08,1,0.99,3.24,0.03,5,13,0.094,91.0810623038996,3.0
+P15,Dove shampoo,S7,Flores-Cook,Chennai,2025-03-09,244,32.92,8032.48,4,0.95,4.52,0.03,10,23,0.094,89.1563827879875,4.0
+P15,Dove shampoo,S8,Thompson Group,Hyderabad,2025-04-26,155,45.69,7081.95,4,0.94,4.72,0.05,8,11,0.071,87.1344374719857,5.0
+P15,Dove shampoo,S10,"Terry, Smith and Weber",Ahmedabad,2025-05-31,190,28.71,5454.9,7,0.85,3.36,0.03,1,7,0.037,85.8299058718064,6.0
+P15,Dove shampoo,S5,Bass Group,Delhi NCR,2025-01-22,195,48.18,9395.1,5,0.99,3.22,0.02,3,12,0.062,83.8963917525773,7.0
+P15,Dove shampoo,S5,Bass Group,Chennai,2024-09-15,789,56.69,44728.41,2,0.96,3.73,0.05,0,51,0.065,82.379175257732,8.0
+P15,Dove shampoo,S7,Flores-Cook,Mumbai,2024-06-27,803,63.47,50966.41,4,0.91,4.94,0.04,4,80,0.1,82.2896772747647,9.0
+P15,Dove shampoo,S4,Thornton Ltd,Ahmedabad,2024-11-05,562,93.67,52642.54,2,0.97,4.27,0.04,3,14,0.025,77.2614119229045,10.0
+P16,Taj Tea,S1,Martin-Mcdowell,Bengaluru,2024-07-25,878,23.24,20404.72,1,0.99,3.98,0.01,3,34,0.039,92.5558135365307,1.0
+P16,Taj Tea,S9,Bond-Adkins,Mumbai,2025-05-25,331,32.18,10651.58,3,0.97,4.6,0.03,2,4,0.012,92.5222277005827,2.0
+P16,Taj Tea,S2,Nelson-Ramirez,Kolkata,2025-02-06,621,26.37,16375.77,5,0.9,4.79,0.02,6,53,0.085,90.5543343792022,3.0
+P16,Taj Tea,S10,"Terry, Smith and Weber",Kolkata,2024-12-23,518,22.06,11427.08,6,0.85,4.51,0.03,5,42,0.081,89.4502689376961,4.0
+P16,Taj Tea,S2,Nelson-Ramirez,Chennai,2025-05-11,133,43.88,5836.04,4,0.97,4.97,0.01,4,11,0.083,89.0800851636038,5.0
+P16,Taj Tea,S9,Bond-Adkins,Kolkata,2025-05-29,967,22.68,21931.56,2,0.88,4.0,0.02,5,71,0.073,88.8713177947109,6.0
+P16,Taj Tea,S4,Thornton Ltd,Mumbai,2025-04-23,876,43.86,38421.36,4,0.86,4.55,0.03,7,82,0.094,84.5445674585388,7.0
+P16,Taj Tea,S6,"Murphy, Aguilar and Zimmerman",Kolkata,2024-10-13,552,46.07,25430.64,7,0.93,3.31,0.01,4,13,0.024,84.3792738682205,8.0
+P16,Taj Tea,S6,"Murphy, Aguilar and Zimmerman",Mumbai,2025-01-26,517,51.64,26697.88,5,0.9,4.5,0.03,0,44,0.085,83.9209547288212,9.0
+P16,Taj Tea,S1,Martin-Mcdowell,Bengaluru,2025-03-24,175,55.53,9717.75,2,0.94,3.04,0.04,5,4,0.023,81.4291483639624,10.0
+P17,Lux Soap,S2,Nelson-Ramirez,Bengaluru,2024-11-11,730,15.18,11081.4,9,0.93,3.88,0.04,7,59,0.081,91.0021783953384,1.0
+P17,Lux Soap,S9,Bond-Adkins,Mumbai,2025-04-30,385,30.51,11746.35,8,0.91,4.64,0.04,3,34,0.088,89.1364993276558,2.0
+P17,Lux Soap,S4,Thornton Ltd,Kolkata,2025-03-15,709,47.76,33861.84,6,0.89,3.71,0.04,7,64,0.09,81.9205199462125,3.0
+P17,Lux Soap,S4,Thornton Ltd,Delhi NCR,2025-05-25,298,66.17,19718.66,6,0.91,4.1,0.02,5,23,0.077,80.0545674585388,4.0
+P17,Lux Soap,S6,"Murphy, Aguilar and Zimmerman",Mumbai,2024-11-19,443,75.35,33380.05,2,1.0,4.03,0.02,3,43,0.097,79.4371940833707,5.0
+P17,Lux Soap,S6,"Murphy, Aguilar and Zimmerman",Ahmedabad,2024-11-03,303,89.85,27224.55,3,0.92,3.24,0.04,5,24,0.079,72.1575302554908,6.0
+P18,Cadbury Dairy Milk,S7,Flores-Cook,Ahmedabad,2024-07-05,151,14.63,2209.13,9,0.89,4.82,0.01,0,2,0.013,95.2854415060511,1.0
+P18,Cadbury Dairy Milk,S3,"Bell, Gardner and Brown",Chennai,2025-05-08,380,16.64,6323.2,1,0.93,4.94,0.03,0,35,0.092,93.6249708650829,2.0
+P18,Cadbury Dairy Milk,S5,Bass Group,Kolkata,2025-02-12,732,11.81,8644.92,2,0.9,3.42,0.02,3,36,0.049,90.787445091887,3.0
+P18,Cadbury Dairy Milk,S1,Martin-Mcdowell,Kolkata,2025-02-19,262,11.3,2960.6,8,0.87,3.09,0.0,7,8,0.031,89.9017436127297,4.0
+P18,Cadbury Dairy Milk,S9,Bond-Adkins,Chennai,2024-12-31,700,23.65,16555.0,4,0.9,3.5,0.04,3,42,0.06,87.8439264903631,5.0
+P18,Cadbury Dairy Milk,S5,Bass Group,Hyderabad,2024-11-23,565,41.55,23475.75,2,0.94,3.78,0.02,5,16,0.028,86.8322725235321,6.0
+P18,Cadbury Dairy Milk,S4,Thornton Ltd,Hyderabad,2025-05-13,919,44.94,41299.86,10,0.95,3.92,0.03,3,62,0.067,85.4725235320484,7.0
+P18,Cadbury Dairy Milk,S9,Bond-Adkins,Delhi NCR,2025-02-22,830,30.59,25389.7,5,0.86,3.58,0.01,6,83,0.1,84.6285701479157,8.0
+P18,Cadbury Dairy Milk,S10,"Terry, Smith and Weber",Hyderabad,2025-03-12,192,52.44,10068.48,7,0.91,3.7,0.05,0,8,0.042,82.6816629314209,9.0
+P18,Cadbury Dairy Milk,S5,Bass Group,Chennai,2025-05-10,629,83.15,52301.35,4,0.99,4.97,0.04,1,15,0.024,82.2490990587181,10.0
+P19,Lays potato chips,S6,"Murphy, Aguilar and Zimmerman",Kolkata,2025-06-16,584,10.63,6207.92,4,0.93,3.83,0.01,7,51,0.087,91.9919004930524,1.0
+P19,Lays potato chips,S7,Flores-Cook,Bengaluru,2024-07-25,187,12.83,2399.21,8,0.95,3.63,0.03,1,17,0.091,91.0788480502017,2.0
+P19,Lays potato chips,S6,"Murphy, Aguilar and Zimmerman",Delhi NCR,2024-08-21,778,18.5,14393.0,1,0.95,3.14,0.02,1,54,0.069,89.0981174361273,3.0
+P19,Lays potato chips,S3,"Bell, Gardner and Brown",Delhi NCR,2025-01-08,337,42.05,14170.85,8,1.0,4.21,0.01,10,16,0.047,89.0402151501569,4.0
+P19,Lays potato chips,S8,Thompson Group,Bengaluru,2024-10-21,636,47.93,30483.48,2,0.98,4.63,0.02,6,39,0.061,87.9624204392649,5.0
+P19,Lays potato chips,S4,Thornton Ltd,Delhi NCR,2024-12-23,910,28.58,26007.8,1,0.85,3.27,0.05,7,73,0.08,84.0990407888839,6.0
+P19,Lays potato chips,S5,Bass Group,Hyderabad,2024-07-08,881,56.83,50067.23,3,0.97,4.04,0.04,7,66,0.075,83.3277991931869,7.0
+P19,Lays potato chips,S2,Nelson-Ramirez,Mumbai,2025-03-14,430,41.58,17879.4,4,0.87,3.29,0.04,1,17,0.04,83.0455490811295,8.0
+P19,Lays potato chips,S1,Martin-Mcdowell,Bengaluru,2024-07-25,986,55.31,54535.66,3,0.95,3.08,0.04,7,68,0.069,80.4684536082474,9.0
+P19,Lays potato chips,S1,Martin-Mcdowell,Mumbai,2025-04-28,797,48.27,38471.19,10,0.85,3.54,0.03,10,79,0.099,80.1262214253698,10.0
+P2,Manforce Condom,S7,Flores-Cook,Delhi NCR,2024-12-24,256,16.71,4277.76,3,1.0,4.54,0.01,10,13,0.051,95.5892828328104,1.0
+P2,Manforce Condom,S5,Bass Group,Chennai,2024-08-23,698,13.67,9541.66,8,0.94,4.36,0.0,8,67,0.096,92.9805916629314,2.0
+P2,Manforce Condom,S7,Flores-Cook,Kolkata,2025-05-21,749,39.29,29428.21,7,0.96,4.3,0.04,4,5,0.007,89.8287718511878,3.0
+P2,Manforce Condom,S4,Thornton Ltd,Chennai,2025-05-30,182,56.09,10208.38,3,0.88,4.29,0.01,1,2,0.011,84.2136441057822,4.0
+P2,Manforce Condom,S10,"Terry, Smith and Weber",Kolkata,2025-03-15,349,65.81,22967.69,3,0.93,4.79,0.04,9,13,0.037,83.7052487673689,5.0
+P2,Manforce Condom,S1,Martin-Mcdowell,Bengaluru,2025-01-28,967,51.58,49877.86,7,0.99,3.31,0.03,6,87,0.09,82.4644016136262,6.0
+P2,Manforce Condom,S2,Nelson-Ramirez,Delhi NCR,2025-04-16,473,61.92,29288.16,1,0.92,3.39,0.04,5,13,0.027,80.4270551322277,7.0
+P2,Manforce Condom,S3,"Bell, Gardner and Brown",Kolkata,2025-02-03,488,70.49,34399.12,1,0.96,3.48,0.04,6,16,0.033,79.5963917525773,8.0
+P2,Manforce Condom,S3,"Bell, Gardner and Brown",Bengaluru,2024-07-23,614,65.64,40302.96,10,0.91,3.93,0.04,5,55,0.09,79.0733482743165,9.0
+P2,Manforce Condom,S9,Bond-Adkins,Delhi NCR,2024-11-14,824,56.7,46720.8,8,0.86,3.33,0.04,7,67,0.081,78.2969341102645,10.0
+P20,Kissan Tomato Ketchup,S7,Flores-Cook,Kolkata,2024-11-03,566,12.28,6950.48,7,0.99,4.67,0.03,10,36,0.064,96.1321111609144,1.0
+P20,Kissan Tomato Ketchup,S7,Flores-Cook,Ahmedabad,2024-08-15,896,19.28,17274.88,3,0.99,4.01,0.04,4,13,0.015,93.9533079336621,2.0
+P20,Kissan Tomato Ketchup,S5,Bass Group,Bengaluru,2024-09-06,383,13.02,4986.66,3,0.94,4.52,0.04,2,34,0.089,93.4162662483191,3.0
+P20,Kissan Tomato Ketchup,S5,Bass Group,Delhi NCR,2025-03-27,844,26.34,22230.96,9,0.99,4.17,0.02,4,58,0.069,91.4310578216047,4.0
+P20,Kissan Tomato Ketchup,S3,"Bell, Gardner and Brown",Delhi NCR,2025-04-19,472,17.45,8236.4,6,0.94,3.49,0.02,4,24,0.051,90.6734379202151,5.0
+P20,Kissan Tomato Ketchup,S4,Thornton Ltd,Ahmedabad,2024-08-07,864,25.2,21772.8,3,0.89,3.35,0.0,1,35,0.041,87.7665486329,6.0
+P20,Kissan Tomato Ketchup,S3,"Bell, Gardner and Brown",Chennai,2024-08-09,344,43.48,14957.12,3,0.97,3.68,0.05,7,7,0.02,86.7897310623039,7.0
+P20,Kissan Tomato Ketchup,S5,Bass Group,Hyderabad,2025-02-28,107,74.44,7965.08,4,0.95,3.05,0.01,4,3,0.028,77.6211385029135,8.0
+P20,Kissan Tomato Ketchup,S5,Bass Group,Hyderabad,2025-01-23,790,79.8,63042.0,2,0.92,4.05,0.02,4,56,0.071,77.2798834603317,9.0
+P20,Kissan Tomato Ketchup,S3,"Bell, Gardner and Brown",Delhi NCR,2024-11-16,711,92.56,65810.16,7,0.87,4.9,0.02,2,20,0.028,77.0101792917974,10.0
+P3,Maggie,S8,Thompson Group,Chennai,2025-06-17,490,10.5,5145.0,10,0.97,4.41,0.04,7,33,0.067,95.06103541013,1.0
+P3,Maggie,S8,Thompson Group,Hyderabad,2024-10-12,200,20.78,4156.0,2,0.98,4.19,0.03,7,5,0.025,93.7071358135365,2.0
+P3,Maggie,S9,Bond-Adkins,Chennai,2024-10-01,961,21.52,20680.72,2,0.87,3.28,0.03,7,15,0.016,88.3312909009413,3.0
+P3,Maggie,S7,Flores-Cook,Mumbai,2025-05-11,729,34.66,25267.14,10,0.93,4.3,0.04,8,49,0.067,88.3164231286419,4.0
+P3,Maggie,S4,Thornton Ltd,Mumbai,2025-05-09,763,36.39,27765.57,6,0.9,4.35,0.04,0,53,0.069,87.2687046167638,5.0
+P3,Maggie,S8,Thompson Group,Delhi NCR,2025-06-04,773,40.7,31461.1,10,0.87,4.85,0.04,9,66,0.085,86.5727700582698,6.0
+P3,Maggie,S5,Bass Group,Ahmedabad,2024-12-13,872,77.56,67632.32,1,0.97,4.98,0.02,3,25,0.029,83.0819004930524,7.0
+P3,Maggie,S10,"Terry, Smith and Weber",Hyderabad,2024-12-13,972,57.94,56317.68,9,0.89,3.54,0.02,6,40,0.041,80.799031824294,8.0
+P3,Maggie,S9,Bond-Adkins,Ahmedabad,2024-12-21,338,64.1,21665.8,9,0.96,3.04,0.05,9,1,0.003,80.508484984312,9.0
+P3,Maggie,S3,"Bell, Gardner and Brown",Hyderabad,2025-06-08,858,55.2,47361.6,1,0.94,3.13,0.04,1,67,0.078,80.12310623039,10.0
+P4,Dabur Red,S9,Bond-Adkins,Delhi NCR,2024-11-17,490,20.08,9839.2,10,0.91,4.94,0.04,5,36,0.073,92.8240161362618,1.0
+P4,Dabur Red,S4,Thornton Ltd,Kolkata,2024-08-11,259,10.46,2709.14,5,0.87,4.1,0.03,4,19,0.073,91.56,2.0
+P4,Dabur Red,S10,"Terry, Smith and Weber",Mumbai,2025-02-13,831,25.78,21423.18,2,0.99,3.84,0.02,8,82,0.099,89.6665620797849,3.0
+P4,Dabur Red,S5,Bass Group,Ahmedabad,2024-07-01,859,43.71,37546.89,5,0.99,4.46,0.03,3,28,0.033,89.3881846705513,4.0
+P4,Dabur Red,S4,Thornton Ltd,Delhi NCR,2024-07-24,889,34.49,30661.61,9,0.94,3.72,0.0,8,4,0.004,89.1545226355894,5.0
+P4,Dabur Red,S7,Flores-Cook,Hyderabad,2025-01-05,973,48.17,46869.41,9,0.96,4.87,0.05,3,55,0.057,87.9486329000448,6.0
+P4,Dabur Red,S4,Thornton Ltd,Ahmedabad,2024-12-19,189,24.04,4543.56,10,0.87,3.12,0.04,6,1,0.005,87.5165217391304,7.0
+P4,Dabur Red,S8,Thompson Group,Delhi NCR,2024-10-30,384,37.42,14369.28,8,0.86,4.37,0.02,10,23,0.06,86.5678664276109,8.0
+P4,Dabur Red,S10,"Terry, Smith and Weber",Chennai,2025-05-15,898,35.27,31672.46,9,0.85,4.29,0.01,6,79,0.088,85.8197131331242,9.0
+P4,Dabur Red,S8,Thompson Group,Delhi NCR,2024-07-22,324,59.43,19255.32,3,0.96,4.32,0.01,8,29,0.09,83.185100851636,10.0
+P5,Bournvita,S8,Thompson Group,Ahmedabad,2025-06-07,638,30.63,19541.94,2,0.96,4.44,0.03,1,60,0.094,89.6796055580457,1.0
+P5,Bournvita,S3,"Bell, Gardner and Brown",Kolkata,2025-01-19,930,34.96,32512.8,10,0.88,3.93,0.02,4,10,0.011,87.7691887046168,2.0
+P5,Bournvita,S2,Nelson-Ramirez,Bengaluru,2024-11-05,548,51.32,28123.36,8,1.0,3.99,0.02,1,1,0.002,87.5526714477813,3.0
+P5,Bournvita,S3,"Bell, Gardner and Brown",Chennai,2024-09-23,336,45.87,15412.32,7,0.94,4.27,0.0,2,13,0.039,87.2040968175706,4.0
+P5,Bournvita,S7,Flores-Cook,Mumbai,2024-12-16,402,35.98,14463.96,6,0.94,3.31,0.02,6,11,0.027,86.7005916629314,5.0
+P5,Bournvita,S1,Martin-Mcdowell,Ahmedabad,2025-02-13,205,66.65,13663.25,1,0.95,3.91,0.03,9,9,0.044,81.2669923800986,6.0
+P5,Bournvita,S2,Nelson-Ramirez,Hyderabad,2025-02-24,568,57.67,32756.56,6,0.89,3.19,0.04,1,0,0.0,80.8395428059166,7.0
+P5,Bournvita,S7,Flores-Cook,Bengaluru,2025-04-16,580,56.05,32509.0,5,0.93,3.21,0.02,5,39,0.067,80.4526086956522,8.0
+P5,Bournvita,S4,Thornton Ltd,Chennai,2024-07-31,997,57.93,57756.21,6,0.86,3.67,0.01,8,64,0.064,79.8512729717616,9.0
+P5,Bournvita,S6,"Murphy, Aguilar and Zimmerman",Hyderabad,2025-01-04,825,63.56,52437.0,2,0.86,3.99,0.03,4,71,0.086,78.6895069475571,10.0
+P6,Sensodyne,S2,Nelson-Ramirez,Bengaluru,2024-09-04,944,15.7,14820.8,8,1.0,3.64,0.04,4,43,0.046,92.9656387270282,1.0
+P6,Sensodyne,S8,Thompson Group,Hyderabad,2025-01-05,597,23.04,13754.88,8,0.92,4.97,0.01,3,55,0.092,92.2306364858808,2.0
+P6,Sensodyne,S7,Flores-Cook,Mumbai,2025-04-22,724,35.54,25730.96,7,0.9,4.29,0.03,9,30,0.041,88.2192021515016,3.0
+P6,Sensodyne,S1,Martin-Mcdowell,Bengaluru,2024-09-09,230,27.62,6352.6,10,0.86,3.2,0.0,8,0,0.0,87.2541909457642,4.0
+P6,Sensodyne,S9,Bond-Adkins,Kolkata,2024-12-23,321,30.12,9668.52,8,0.99,3.02,0.05,4,18,0.056,87.2239040788884,5.0
+P6,Sensodyne,S7,Flores-Cook,Delhi NCR,2025-05-16,552,26.79,14788.08,6,0.89,3.35,0.04,9,19,0.034,87.220206185567,6.0
+P6,Sensodyne,S4,Thornton Ltd,Chennai,2025-06-14,846,33.29,28163.34,4,0.95,3.62,0.03,2,59,0.07,87.0934603316898,7.0
+P6,Sensodyne,S7,Flores-Cook,Bengaluru,2025-06-14,776,40.79,31653.04,1,0.97,3.22,0.04,2,1,0.001,86.6825997310623,8.0
+P6,Sensodyne,S3,"Bell, Gardner and Brown",Mumbai,2025-01-01,489,81.99,40093.11,9,0.88,4.31,0.01,3,32,0.065,76.8490721649484,9.0
+P6,Sensodyne,S1,Martin-Mcdowell,Bengaluru,2024-06-28,953,67.78,64594.34,9,0.86,3.32,0.04,4,78,0.082,75.7537427162707,10.0
+P7,Parle-G,S7,Flores-Cook,Bengaluru,2025-03-29,146,15.85,2314.1,4,0.99,4.93,0.04,4,1,0.007,97.7220215150157,1.0
+P7,Parle-G,S4,Thornton Ltd,Ahmedabad,2024-08-26,584,14.65,8555.6,3,0.93,4.08,0.03,10,5,0.009,93.9809592111161,2.0
+P7,Parle-G,S2,Nelson-Ramirez,Kolkata,2025-04-15,332,13.88,4608.16,6,0.98,4.06,0.05,2,19,0.057,93.7035275661138,3.0
+P7,Parle-G,S2,Nelson-Ramirez,Delhi NCR,2024-08-03,322,18.13,5837.86,1,0.98,3.64,0.01,9,3,0.009,93.3310398924249,4.0
+P7,Parle-G,S7,Flores-Cook,Mumbai,2024-07-01,199,20.79,4137.21,7,0.9,4.89,0.02,5,13,0.065,92.704894666069,5.0
+P7,Parle-G,S9,Bond-Adkins,Ahmedabad,2025-05-04,685,15.5,10617.5,7,0.89,4.61,0.04,3,52,0.076,92.2704616763783,6.0
+P7,Parle-G,S1,Martin-Mcdowell,Ahmedabad,2025-06-03,555,30.9,17149.5,4,0.98,3.77,0.03,5,6,0.011,90.5990945764231,7.0
+P7,Parle-G,S1,Martin-Mcdowell,Hyderabad,2025-04-29,505,17.96,9069.8,8,0.88,3.09,0.02,2,16,0.032,88.4291393993725,8.0
+P7,Parle-G,S10,"Terry, Smith and Weber",Bengaluru,2025-03-14,204,65.07,13274.28,2,0.87,3.58,0.02,6,3,0.015,79.6010936799641,9.0
+P7,Parle-G,S10,"Terry, Smith and Weber",Hyderabad,2024-10-13,541,81.85,44280.85,2,0.95,4.4,0.04,10,21,0.039,79.3804482294935,10.0
+P8,Garden Successful,S6,"Murphy, Aguilar and Zimmerman",Bengaluru,2024-10-26,431,21.47,9253.57,1,0.91,4.59,0.01,2,16,0.037,92.8424966382788,1.0
+P8,Garden Successful,S7,Flores-Cook,Mumbai,2024-09-18,249,36.5,9088.5,5,0.99,4.53,0.01,3,5,0.02,91.8040519946213,2.0
+P8,Garden Successful,S10,"Terry, Smith and Weber",Hyderabad,2024-10-17,897,33.35,29914.95,3,0.91,4.18,0.01,1,65,0.072,87.9000134468848,3.0
+P8,Garden Successful,S4,Thornton Ltd,Bengaluru,2025-03-22,651,44.98,29281.98,5,0.89,4.66,0.02,9,54,0.083,85.8035589421784,4.0
+P8,Garden Successful,S8,Thompson Group,Kolkata,2024-07-19,447,50.58,22609.26,8,0.87,4.97,0.04,6,26,0.058,85.5285163603765,5.0
+P8,Garden Successful,S3,"Bell, Gardner and Brown",Kolkata,2024-10-17,919,94.64,86974.16,3,0.99,4.83,0.02,6,3,0.003,80.0840206185567,6.0
+P8,Garden Successful,S4,Thornton Ltd,Chennai,2025-04-22,489,72.83,35613.87,8,0.93,3.62,0.04,7,19,0.039,78.5619632451815,7.0
+P8,Garden Successful,S9,Bond-Adkins,Mumbai,2024-08-21,250,81.57,20392.5,1,0.89,3.88,0.0,0,7,0.028,77.1132003585836,8.0
+P8,Garden Successful,S3,"Bell, Gardner and Brown",Kolkata,2025-03-23,418,67.01,28010.18,9,0.89,3.15,0.01,0,35,0.084,76.4063110712685,9.0
+P8,Garden Successful,S1,Martin-Mcdowell,Hyderabad,2024-07-17,683,65.64,44832.12,10,0.87,3.17,0.04,10,48,0.07,76.3933482743165,10.0
+P9,Tide Detergent,S3,"Bell, Gardner and Brown",Kolkata,2024-08-01,173,15.07,2607.11,1,0.98,4.63,0.05,2,9,0.052,95.2968310174809,1.0
+P9,Tide Detergent,S5,Bass Group,Bengaluru,2024-12-24,284,11.18,3175.12,5,0.95,3.36,0.05,4,10,0.035,92.1186373823398,2.0
+P9,Tide Detergent,S1,Martin-Mcdowell,Chennai,2024-11-22,965,17.22,16617.3,5,0.93,3.82,0.05,3,49,0.051,91.1649843119677,3.0
+P9,Tide Detergent,S9,Bond-Adkins,Ahmedabad,2024-07-04,785,33.21,26069.85,6,0.95,4.63,0.03,3,33,0.042,90.9813895114298,4.0
+P9,Tide Detergent,S4,Thornton Ltd,Mumbai,2024-09-26,880,37.99,33431.2,3,0.9,4.46,0.03,8,13,0.015,88.9601210219633,5.0
+P9,Tide Detergent,S5,Bass Group,Mumbai,2025-02-15,923,19.16,17684.68,8,0.87,3.49,0.01,4,86,0.093,87.3802017032721,6.0
+P9,Tide Detergent,S2,Nelson-Ramirez,Delhi NCR,2024-09-02,435,30.8,13398.0,2,0.95,3.04,0.01,0,31,0.071,86.0815060510982,7.0
+P9,Tide Detergent,S4,Thornton Ltd,Mumbai,2024-07-13,324,59.2,19180.8,6,0.88,4.94,0.04,0,14,0.043,84.2066472433886,8.0
+P9,Tide Detergent,S3,"Bell, Gardner and Brown",Kolkata,2024-10-19,699,59.67,41709.33,7,0.93,4.75,0.02,10,62,0.089,83.601313312416,9.0
+P9,Tide Detergent,S3,"Bell, Gardner and Brown",Kolkata,2024-09-08,457,75.34,34430.38,2,0.98,4.77,0.04,3,23,0.05,82.3694352308382,10.0
+P1,Dawat Rice,S11,Synthetic Supplier ,Hyderabad,2025-03-17,225,62.24,14004.0,8,0.87,3.89,0.01,6,8,0.036,81.784418,
+P1,Dawat Rice,S11,Synthetic Supplier ,Hyderabad,2025-01-29,764,57.78,44143.92,4,0.91,3.96,0.01,9,35,0.046,85.47825,
+P1,Dawat Rice,S11,Synthetic Supplier ,Hyderabad,2025-04-17,617,53.98,33305.66,2,0.95,3.46,0.01,2,9,0.015,71.150233,
+P1,Dawat Rice,S11,Synthetic Supplier ,Hyderabad,2025-01-26,879,29.9,26282.1,3,0.96,4.96,0.04,6,78,0.089,87.480551,
+P1,Dawat Rice,S11,Synthetic Supplier ,Kolkata,2025-05-28,360,40.01,14403.6,1,0.99,4.15,0.02,0,60,0.167,72.794892,
+P1,Dawat Rice,S11,Synthetic Supplier ,Kolkata,2025-06-10,886,49.76,44087.36,2,0.9,4.39,0.05,7,86,0.097,87.332732,
+P1,Dawat Rice,S11,Synthetic Supplier ,Kolkata,2025-04-24,499,27.19,13567.81,8,0.94,4.34,0.02,5,77,0.154,77.923742,
+P1,Dawat Rice,S11,Synthetic Supplier ,Mumbai,2025-05-14,849,11.86,10069.14,3,0.99,4.03,0.04,6,10,0.012,73.280359,
+P1,Dawat Rice,S11,Synthetic Supplier ,Mumbai,2025-04-28,130,65.42,8504.6,6,1.0,3.64,0.02,5,72,0.554,88.4686,
+P10,Tata Tea,S11,Synthetic Supplier ,Ahmedabad,2025-01-04,630,44.88,28274.4,7,0.9,3.38,0.03,5,14,0.022,71.457701,
+P10,Tata Tea,S11,Synthetic Supplier ,Ahmedabad,2025-02-19,880,27.25,23980.0,4,0.92,3.53,0.02,3,35,0.04,94.164861,
+P10,Tata Tea,S11,Synthetic Supplier ,Ahmedabad,2025-04-09,144,36.95,5320.8,6,0.95,3.1,0.05,8,62,0.431,93.213166,
+P10,Tata Tea,S11,Synthetic Supplier ,Bengaluru,2025-04-09,239,29.69,7095.91,9,0.88,3.71,0.05,0,81,0.339,83.859068,
+P10,Tata Tea,S11,Synthetic Supplier ,Bengaluru,2025-06-01,804,29.39,23629.56,5,0.92,3.05,0.0,2,98,0.122,81.747605,
+P10,Tata Tea,S11,Synthetic Supplier ,Bengaluru,2025-03-13,234,65.07,15226.38,3,0.86,3.39,0.03,6,41,0.175,85.635092,
+P10,Tata Tea,S11,Synthetic Supplier ,Bengaluru,2025-05-28,309,46.22,14281.98,6,0.95,3.02,0.0,2,29,0.094,83.163078,
+P10,Tata Tea,S11,Synthetic Supplier ,Hyderabad,2025-01-04,287,64.46,18500.02,3,1.0,3.77,0.04,9,84,0.293,87.561008,
+P10,Tata Tea,S11,Synthetic Supplier ,Hyderabad,2025-05-04,612,40.8,24969.6,7,0.95,3.38,0.04,8,56,0.092,87.880928,
+P10,Tata Tea,S11,Synthetic Supplier ,Hyderabad,2025-01-13,572,33.31,19053.32,6,0.92,4.91,0.03,0,92,0.161,84.177381,
+P10,Tata Tea,S11,Synthetic Supplier ,Hyderabad,2025-04-24,959,41.15,39462.85,8,0.9,3.94,0.02,2,60,0.063,75.896556,
+P10,Tata Tea,S11,Synthetic Supplier ,Kolkata,2025-02-20,646,34.84,22506.64,7,0.92,3.05,0.03,5,53,0.082,82.127561,
+P10,Tata Tea,S11,Synthetic Supplier ,Kolkata,2025-03-20,669,32.05,21441.45,2,0.88,3.13,0.03,0,94,0.141,72.457703,
+P10,Tata Tea,S11,Synthetic Supplier ,Kolkata,2025-06-02,545,60.9,33190.5,8,0.85,4.71,0.02,9,16,0.029,93.918387,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Ahmedabad,2025-06-03,927,40.15,37219.05,9,0.88,3.52,0.02,3,57,0.061,93.188502,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Ahmedabad,2025-05-24,953,24.64,23481.92,2,0.87,3.27,0.04,1,64,0.067,93.633606,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Ahmedabad,2025-04-14,175,20.22,3538.5,3,0.93,4.5,0.03,0,29,0.166,94.794117,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Bengaluru,2025-03-17,596,62.57,37291.72,1,0.89,3.7,0.03,0,37,0.062,89.730113,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Bengaluru,2025-02-07,256,21.53,5511.68,9,0.87,3.28,0.0,0,8,0.031,76.766937,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Bengaluru,2025-05-24,691,48.17,33285.47,8,0.96,3.71,0.02,5,76,0.11,87.471694,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Bengaluru,2025-03-05,146,41.01,5987.46,8,0.94,3.59,0.05,8,44,0.301,76.148763,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Chennai,2025-06-16,635,39.5,25082.5,4,0.89,3.45,0.01,7,23,0.036,94.409136,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Chennai,2025-04-01,391,42.04,16437.64,1,0.87,3.36,0.02,4,26,0.066,92.187497,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Chennai,2025-04-20,562,20.35,11436.7,1,0.9,4.02,0.02,6,67,0.119,82.299494,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Chennai,2025-03-23,151,51.27,7741.77,5,0.86,3.19,0.03,0,85,0.563,81.073743,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Delhi NCR,2025-02-22,858,47.66,40892.28,2,0.99,4.27,0.05,9,39,0.045,83.382133,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Delhi NCR,2025-05-22,616,66.92,41222.72,3,0.89,3.91,0.04,3,57,0.093,72.91815,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Delhi NCR,2025-01-27,919,65.68,60359.92,8,0.99,4.1,0.03,4,40,0.044,71.28451,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Hyderabad,2025-01-03,958,10.32,9886.56,8,0.87,3.23,0.01,9,39,0.041,86.572003,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Hyderabad,2025-03-09,168,56.79,9540.72,9,0.97,4.47,0.01,6,43,0.256,91.668458,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Hyderabad,2025-05-11,350,59.26,20741.0,2,0.86,4.61,0.04,6,94,0.269,73.536776,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Kolkata,2025-06-01,824,24.04,19808.96,8,0.95,3.91,0.0,6,45,0.055,82.595461,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Kolkata,2025-06-17,611,13.6,8309.6,5,0.99,4.24,0.02,8,83,0.136,77.339495,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Kolkata,2025-02-11,307,60.48,18567.36,8,1.0,4.58,0.04,9,41,0.134,86.456805,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Kolkata,2025-04-10,124,30.77,3815.48,6,0.99,3.47,0.02,7,51,0.411,76.123027,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Mumbai,2025-04-16,324,40.56,13141.44,8,0.98,3.68,0.01,0,31,0.096,78.644996,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Mumbai,2025-04-07,815,60.65,49429.75,9,0.88,4.14,0.01,0,33,0.04,89.25744,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Mumbai,2025-03-12,190,42.07,7993.3,6,0.88,4.11,0.04,4,91,0.479,78.598372,
+P11,Oreo Biscuit,S11,Synthetic Supplier ,Mumbai,2025-01-13,798,67.99,54256.02,3,0.89,3.81,0.01,1,92,0.115,86.642246,
+P12,Garnier Facewash,S11,Synthetic Supplier ,Bengaluru,2025-04-14,436,21.56,9400.16,7,0.93,3.71,0.02,1,36,0.083,88.627634,
+P12,Garnier Facewash,S11,Synthetic Supplier ,Bengaluru,2025-05-29,185,41.17,7616.45,5,0.96,4.21,0.01,5,44,0.238,88.809776,
+P12,Garnier Facewash,S11,Synthetic Supplier ,Bengaluru,2025-01-24,435,45.2,19662.0,1,0.98,4.85,0.02,5,91,0.209,73.758041,
+P12,Garnier Facewash,S11,Synthetic Supplier ,Chennai,2025-04-24,708,22.1,15646.8,2,0.98,4.58,0.0,6,5,0.007,71.857089,
+P12,Garnier Facewash,S11,Synthetic Supplier ,Hyderabad,2025-01-18,622,34.49,21452.78,4,0.98,4.76,0.03,1,65,0.105,84.264417,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Ahmedabad,2025-06-06,195,52.92,10319.4,2,0.85,3.81,0.02,3,33,0.169,84.684342,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Ahmedabad,2025-02-28,108,22.37,2415.96,5,0.96,4.24,0.02,5,58,0.537,83.26794,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Bengaluru,2025-05-26,716,14.93,10689.88,1,0.92,3.73,0.04,7,88,0.123,93.283852,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Bengaluru,2025-03-17,717,65.55,46999.35,5,0.87,4.82,0.03,0,68,0.095,89.935945,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Bengaluru,2025-04-03,610,17.66,10772.6,3,0.97,3.64,0.03,3,45,0.074,73.288407,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Bengaluru,2025-06-16,310,52.99,16426.9,7,0.94,3.24,0.02,3,34,0.11,73.056342,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Chennai,2025-05-28,133,24.48,3255.84,7,0.9,3.23,0.02,3,82,0.617,83.564126,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Chennai,2025-04-29,767,38.94,29866.98,2,0.89,3.84,0.03,2,32,0.042,82.200494,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Chennai,2025-01-06,761,53.2,40485.2,7,0.86,4.51,0.04,9,14,0.018,89.376385,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Delhi NCR,2025-01-21,132,17.72,2339.04,8,0.97,3.5,0.02,3,13,0.098,75.733998,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Delhi NCR,2025-06-19,542,19.59,10617.78,9,0.98,4.02,0.03,7,81,0.149,82.427359,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Mumbai,2025-03-24,849,50.7,43044.3,9,0.96,4.1,0.02,2,88,0.104,89.836635,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Mumbai,2025-02-23,665,63.23,42047.95,7,0.95,4.06,0.01,9,51,0.077,82.537765,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Mumbai,2025-01-27,738,23.11,17055.18,8,0.94,4.16,0.03,1,43,0.058,72.261773,
+P13,Surf Excel Detergent,S11,Synthetic Supplier ,Mumbai,2025-03-20,299,43.49,13003.51,5,0.91,4.14,0.05,3,26,0.087,75.665368,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Ahmedabad,2025-01-21,979,34.5,33775.5,7,0.99,4.84,0.0,7,30,0.031,75.404332,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Ahmedabad,2025-02-11,778,60.32,46928.96,8,0.91,3.29,0.03,0,46,0.059,82.279449,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Ahmedabad,2025-03-18,942,49.09,46242.78,9,0.9,4.76,0.05,6,90,0.096,78.973531,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Ahmedabad,2025-04-30,124,20.19,2503.56,7,0.86,3.18,0.01,7,42,0.339,80.911282,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Bengaluru,2025-03-02,957,22.6,21628.2,5,0.99,3.67,0.05,6,8,0.008,78.245464,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Bengaluru,2025-05-11,887,68.58,60830.46,9,0.95,3.1,0.03,6,21,0.024,73.294744,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Bengaluru,2025-03-15,243,29.09,7068.87,6,0.94,3.65,0.01,3,93,0.383,80.564879,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Chennai,2025-06-28,406,49.92,20267.52,3,0.91,4.46,0.01,7,90,0.222,91.725655,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Chennai,2025-03-16,855,56.15,48008.25,8,0.99,4.19,0.03,5,78,0.091,85.794161,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Delhi NCR,2025-06-06,925,32.27,29849.75,2,0.91,4.85,0.04,0,64,0.069,93.710903,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Delhi NCR,2025-04-17,489,27.13,13266.57,9,0.92,3.8,0.02,0,39,0.08,74.771849,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Delhi NCR,2025-05-18,142,64.59,9171.78,4,0.99,3.7,0.02,8,85,0.599,79.686698,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Delhi NCR,2025-06-16,331,53.0,17543.0,7,0.94,4.01,0.05,8,20,0.06,90.428423,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Hyderabad,2025-05-10,866,22.68,19640.88,3,0.9,3.24,0.02,1,25,0.029,93.759712,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Hyderabad,2025-06-28,782,65.81,51463.42,5,0.96,4.1,0.02,7,21,0.027,81.241121,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Hyderabad,2025-01-27,330,62.3,20559.0,9,0.88,4.89,0.03,6,44,0.133,88.439861,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Hyderabad,2025-06-08,534,61.06,32606.04,2,0.87,4.62,0.05,3,78,0.146,93.021871,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Mumbai,2025-03-25,713,31.22,22259.86,3,0.97,3.2,0.02,4,32,0.045,87.877685,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Mumbai,2025-04-16,257,20.86,5361.02,7,0.98,4.6,0.02,7,24,0.093,72.422692,
+P14,Britania marrie biscuit,S11,Synthetic Supplier ,Mumbai,2025-06-23,664,59.01,39182.64,5,0.96,4.79,0.01,3,89,0.134,85.650951,
+P15,Dove shampoo,S11,Synthetic Supplier ,Ahmedabad,2025-06-03,687,41.1,28235.7,1,0.94,3.24,0.04,8,70,0.102,87.771626,
+P15,Dove shampoo,S11,Synthetic Supplier ,Chennai,2025-04-01,395,57.34,22649.3,3,0.96,4.12,0.01,1,82,0.208,70.499661,
+P15,Dove shampoo,S11,Synthetic Supplier ,Chennai,2025-06-21,764,57.5,43930.0,3,0.87,3.69,0.03,8,6,0.008,85.394902,
+P15,Dove shampoo,S11,Synthetic Supplier ,Chennai,2025-04-26,141,27.09,3819.69,2,0.91,4.33,0.01,5,24,0.17,87.503275,
+P15,Dove shampoo,S11,Synthetic Supplier ,Delhi NCR,2025-03-24,215,18.28,3930.2,2,0.93,3.2,0.04,6,40,0.186,85.912264,
+P15,Dove shampoo,S11,Synthetic Supplier ,Delhi NCR,2025-05-27,696,37.25,25926.0,6,0.87,4.41,0.04,9,15,0.022,79.720817,
+P15,Dove shampoo,S11,Synthetic Supplier ,Delhi NCR,2025-01-02,614,15.97,9805.58,7,0.86,4.16,0.0,0,72,0.117,77.582072,
+P15,Dove shampoo,S11,Synthetic Supplier ,Hyderabad,2025-06-26,246,44.67,10988.82,3,0.85,4.93,0.02,9,31,0.126,82.973753,
+P15,Dove shampoo,S11,Synthetic Supplier ,Hyderabad,2025-05-22,543,13.51,7335.93,3,0.98,3.31,0.01,1,98,0.18,75.202054,
+P15,Dove shampoo,S11,Synthetic Supplier ,Hyderabad,2025-04-30,890,20.63,18360.7,4,0.87,3.85,0.04,8,43,0.048,79.597005,
+P15,Dove shampoo,S11,Synthetic Supplier ,Hyderabad,2025-05-05,428,36.31,15540.68,6,0.87,4.86,0.01,3,46,0.107,72.091635,
+P15,Dove shampoo,S11,Synthetic Supplier ,Mumbai,2025-05-06,919,54.02,49644.38,4,0.98,3.55,0.02,6,69,0.075,87.100661,
+P15,Dove shampoo,S11,Synthetic Supplier ,Mumbai,2025-01-14,841,47.85,40241.85,6,0.96,4.12,0.01,4,90,0.107,75.773296,
+P15,Dove shampoo,S11,Synthetic Supplier ,Mumbai,2025-03-31,789,14.57,11495.73,2,0.99,3.12,0.0,7,92,0.117,81.724987,
+P15,Dove shampoo,S11,Synthetic Supplier ,Mumbai,2025-05-17,437,24.46,10689.02,8,0.97,4.61,0.03,3,64,0.146,75.297102,
+P16,Taj Tea,S11,Synthetic Supplier ,Bengaluru,2025-04-20,805,11.34,9128.7,6,0.9,4.27,0.04,7,57,0.071,83.292046,
+P16,Taj Tea,S11,Synthetic Supplier ,Bengaluru,2025-03-04,535,27.33,14621.55,4,0.95,4.42,0.01,0,16,0.03,70.402814,
+P16,Taj Tea,S11,Synthetic Supplier ,Bengaluru,2025-03-03,383,69.65,26675.95,8,0.88,3.14,0.03,7,81,0.211,89.3074,
+P16,Taj Tea,S11,Synthetic Supplier ,Chennai,2025-06-06,519,58.07,30138.33,4,0.91,4.33,0.02,5,34,0.066,87.237659,
+P16,Taj Tea,S11,Synthetic Supplier ,Chennai,2025-02-10,124,31.46,3901.04,8,0.93,4.59,0.03,7,5,0.04,72.143712,
+P16,Taj Tea,S11,Synthetic Supplier ,Chennai,2025-03-02,172,58.45,10053.4,5,0.92,4.38,0.01,9,68,0.395,89.96207,
+P16,Taj Tea,S11,Synthetic Supplier ,Chennai,2025-03-21,192,36.2,6950.4,7,0.88,3.31,0.01,1,40,0.208,92.436671,
+P16,Taj Tea,S11,Synthetic Supplier ,Kolkata,2025-01-19,129,21.77,2808.33,4,0.86,3.93,0.02,0,13,0.101,79.576494,
+P16,Taj Tea,S11,Synthetic Supplier ,Mumbai,2025-03-27,521,66.47,34630.87,9,0.89,4.16,0.01,0,63,0.121,78.676807,
+P16,Taj Tea,S11,Synthetic Supplier ,Mumbai,2025-04-03,841,51.86,43614.26,7,1.0,3.79,0.04,3,29,0.034,77.547093,
+P17,Lux Soap,S11,Synthetic Supplier ,Ahmedabad,2025-05-05,128,47.38,6064.64,7,0.95,4.61,0.04,5,45,0.352,78.054203,
+P17,Lux Soap,S11,Synthetic Supplier ,Ahmedabad,2025-01-29,906,23.68,21454.08,9,0.98,4.6,0.03,2,50,0.055,81.221983,
+P17,Lux Soap,S11,Synthetic Supplier ,Ahmedabad,2025-02-21,144,29.68,4273.92,1,0.94,4.33,0.02,3,77,0.535,75.635012,
+P17,Lux Soap,S11,Synthetic Supplier ,Ahmedabad,2025-05-16,342,63.95,21870.9,7,0.96,4.54,0.01,3,44,0.129,72.595836,
+P17,Lux Soap,S11,Synthetic Supplier ,Bengaluru,2025-04-10,514,45.68,23479.52,3,0.85,4.32,0.02,5,23,0.045,89.540712,
+P17,Lux Soap,S11,Synthetic Supplier ,Bengaluru,2025-01-03,970,41.53,40284.1,4,0.93,3.23,0.04,4,74,0.076,89.309973,
+P17,Lux Soap,S11,Synthetic Supplier ,Bengaluru,2025-05-27,833,53.34,44432.22,5,0.98,3.47,0.0,1,82,0.098,92.453887,
+P17,Lux Soap,S11,Synthetic Supplier ,Bengaluru,2025-03-27,273,67.81,18512.13,3,0.99,4.69,0.04,1,2,0.007,93.257078,
+P17,Lux Soap,S11,Synthetic Supplier ,Delhi NCR,2025-05-15,632,29.54,18669.28,5,0.91,3.57,0.01,1,37,0.059,75.326471,
+P17,Lux Soap,S11,Synthetic Supplier ,Delhi NCR,2025-03-12,485,43.57,21131.45,4,0.94,3.76,0.04,6,8,0.016,75.245063,
+P17,Lux Soap,S11,Synthetic Supplier ,Delhi NCR,2025-06-16,233,14.34,3341.22,3,0.95,3.65,0.05,6,10,0.043,86.561612,
+P17,Lux Soap,S11,Synthetic Supplier ,Delhi NCR,2025-03-25,841,59.82,50308.62,9,0.91,4.06,0.03,1,57,0.068,79.572495,
+P17,Lux Soap,S11,Synthetic Supplier ,Kolkata,2025-03-20,730,66.0,48180.0,9,0.95,3.82,0.01,1,64,0.088,84.16001,
+P17,Lux Soap,S11,Synthetic Supplier ,Kolkata,2025-06-10,181,33.03,5978.43,8,0.86,4.49,0.03,1,79,0.436,92.116049,
+P17,Lux Soap,S11,Synthetic Supplier ,Kolkata,2025-02-03,566,41.71,23607.86,9,0.97,4.13,0.02,3,22,0.039,87.780613,
+P17,Lux Soap,S11,Synthetic Supplier ,Kolkata,2025-03-18,950,68.66,65227.0,9,0.97,3.98,0.04,2,54,0.057,73.693461,
+P17,Lux Soap,S11,Synthetic Supplier ,Mumbai,2025-05-23,124,12.29,1523.96,8,0.87,3.63,0.02,9,76,0.613,77.471198,
+P17,Lux Soap,S11,Synthetic Supplier ,Mumbai,2025-05-28,680,58.77,39963.6,4,0.86,4.62,0.0,0,56,0.082,87.639112,
+P17,Lux Soap,S11,Synthetic Supplier ,Mumbai,2025-04-28,128,64.97,8316.16,9,0.94,4.11,0.0,4,36,0.281,92.455719,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Ahmedabad,2025-04-04,553,23.84,13183.52,5,1.0,4.77,0.05,1,23,0.042,81.982495,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Ahmedabad,2025-06-07,621,43.49,27007.29,7,0.99,3.02,0.01,1,90,0.145,85.10185,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Ahmedabad,2025-01-30,812,59.12,48005.44,4,1.0,4.32,0.0,7,26,0.032,81.952253,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Ahmedabad,2025-02-15,289,54.17,15655.13,7,0.87,4.05,0.03,8,1,0.003,84.25918,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Chennai,2025-03-20,352,66.31,23341.12,1,0.93,4.51,0.05,2,63,0.179,85.957235,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Chennai,2025-05-12,209,35.1,7335.9,9,0.99,4.4,0.02,4,88,0.421,90.968,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Delhi NCR,2025-06-28,926,64.07,59328.82,7,0.88,4.14,0.02,4,18,0.019,88.049396,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Delhi NCR,2025-02-17,689,48.32,33292.48,9,0.94,3.35,0.03,3,87,0.126,86.108788,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Delhi NCR,2025-03-22,280,13.87,3883.6,7,0.92,4.64,0.04,0,79,0.282,82.393273,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Delhi NCR,2025-05-27,911,33.02,30081.22,6,0.95,4.33,0.02,8,21,0.023,90.394995,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Hyderabad,2025-04-28,645,33.82,21813.9,9,0.96,4.03,0.01,7,69,0.107,86.694926,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Hyderabad,2025-06-26,432,16.42,7093.44,3,0.92,3.82,0.01,0,98,0.227,92.768881,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Kolkata,2025-05-06,833,54.11,45073.63,6,0.91,3.16,0.04,4,9,0.011,91.266182,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Kolkata,2025-04-29,131,38.99,5107.69,8,0.9,3.57,0.03,9,58,0.443,78.067059,
+P18,Cadbury Dairy Milk,S11,Synthetic Supplier ,Kolkata,2025-05-13,399,51.07,20376.93,2,0.91,3.15,0.05,1,7,0.018,72.702517,
+P19,Lays potato chips,S11,Synthetic Supplier ,Bengaluru,2025-05-04,869,18.96,16476.24,4,0.99,4.38,0.01,9,39,0.045,90.209433,
+P19,Lays potato chips,S11,Synthetic Supplier ,Bengaluru,2025-04-24,894,68.98,61668.12,3,0.99,4.73,0.01,9,65,0.073,83.537072,
+P19,Lays potato chips,S11,Synthetic Supplier ,Delhi NCR,2025-02-02,509,10.34,5263.06,2,0.92,4.99,0.03,0,30,0.059,86.281765,
+P19,Lays potato chips,S11,Synthetic Supplier ,Delhi NCR,2025-01-31,345,19.17,6613.65,3,0.89,3.52,0.05,4,88,0.255,92.528064,
+P19,Lays potato chips,S11,Synthetic Supplier ,Hyderabad,2025-02-21,918,69.29,63608.22,1,0.97,3.19,0.03,2,34,0.037,76.867753,
+P19,Lays potato chips,S11,Synthetic Supplier ,Hyderabad,2025-03-27,455,46.37,21098.35,2,0.94,4.12,0.01,6,83,0.182,77.565194,
+P19,Lays potato chips,S11,Synthetic Supplier ,Hyderabad,2025-06-07,257,55.98,14386.86,7,0.96,4.43,0.05,2,41,0.16,92.388834,
+P19,Lays potato chips,S11,Synthetic Supplier ,Hyderabad,2025-03-15,485,40.06,19429.1,6,0.99,3.69,0.04,2,89,0.184,92.003476,
+P19,Lays potato chips,S11,Synthetic Supplier ,Kolkata,2025-01-06,989,58.62,57975.18,7,0.99,4.09,0.03,6,66,0.067,76.530957,
+P19,Lays potato chips,S11,Synthetic Supplier ,Kolkata,2025-05-13,925,52.7,48747.5,9,0.98,3.56,0.0,6,35,0.038,81.969358,
+P19,Lays potato chips,S11,Synthetic Supplier ,Kolkata,2025-06-26,393,64.82,25474.26,1,0.99,4.15,0.02,6,90,0.229,78.354584,
+P19,Lays potato chips,S11,Synthetic Supplier ,Kolkata,2025-04-24,945,26.61,25146.45,6,0.9,3.92,0.04,4,19,0.02,83.703042,
+P19,Lays potato chips,S11,Synthetic Supplier ,Mumbai,2025-03-28,409,48.59,19873.31,1,0.88,4.33,0.0,8,95,0.232,90.657137,
+P19,Lays potato chips,S11,Synthetic Supplier ,Mumbai,2025-01-27,187,40.09,7496.83,1,0.85,3.62,0.04,6,29,0.155,90.63814,
+P19,Lays potato chips,S11,Synthetic Supplier ,Mumbai,2025-06-29,611,21.31,13020.41,6,0.98,4.11,0.02,7,90,0.147,85.403901,
+P2,Manforce Condom,S11,Synthetic Supplier ,Bengaluru,2025-03-12,827,44.27,36611.29,2,0.97,4.62,0.05,4,79,0.096,81.632007,
+P2,Manforce Condom,S11,Synthetic Supplier ,Bengaluru,2025-02-10,242,52.33,12663.86,5,0.97,4.68,0.02,4,99,0.409,81.893215,
+P2,Manforce Condom,S11,Synthetic Supplier ,Bengaluru,2025-03-06,135,52.2,7047.0,7,0.91,3.69,0.05,5,64,0.474,76.596737,
+P2,Manforce Condom,S11,Synthetic Supplier ,Chennai,2025-02-12,408,31.25,12750.0,9,0.92,4.15,0.02,6,72,0.176,81.002633,
+P2,Manforce Condom,S11,Synthetic Supplier ,Chennai,2025-01-16,164,42.36,6947.04,8,0.95,4.88,0.01,7,20,0.122,81.476488,
+P2,Manforce Condom,S11,Synthetic Supplier ,Chennai,2025-01-13,904,50.69,45823.76,6,0.91,4.58,0.01,0,95,0.105,79.858527,
+P2,Manforce Condom,S11,Synthetic Supplier ,Delhi NCR,2025-05-06,942,22.51,21204.42,2,0.9,4.31,0.04,5,23,0.024,75.687891,
+P2,Manforce Condom,S11,Synthetic Supplier ,Delhi NCR,2025-01-11,919,23.65,21734.35,7,0.9,3.16,0.02,3,51,0.055,78.097524,
+P2,Manforce Condom,S11,Synthetic Supplier ,Kolkata,2025-06-13,839,21.08,17686.12,5,0.9,4.87,0.02,9,6,0.007,93.598455,
+P2,Manforce Condom,S11,Synthetic Supplier ,Kolkata,2025-02-06,695,64.27,44667.65,4,0.88,3.66,0.03,9,55,0.079,94.817624,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Ahmedabad,2025-01-01,551,46.65,25704.15,4,0.91,3.37,0.01,7,20,0.036,76.284022,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Ahmedabad,2025-05-07,514,44.2,22718.8,9,0.94,3.88,0.04,6,13,0.025,77.079701,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Ahmedabad,2025-03-17,292,47.51,13872.92,8,0.95,4.01,0.02,6,58,0.199,82.994046,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Bengaluru,2025-04-30,279,63.13,17613.27,6,0.88,3.6,0.01,5,45,0.161,73.577316,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Bengaluru,2025-05-12,155,45.06,6984.3,8,0.98,4.31,0.03,8,46,0.297,79.646458,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Bengaluru,2025-06-06,981,31.61,31009.41,6,0.96,3.11,0.03,7,79,0.081,79.928281,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Bengaluru,2025-06-20,941,53.7,50531.7,1,0.89,4.0,0.0,8,17,0.018,77.497357,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Chennai,2025-02-03,349,56.7,19788.3,6,0.9,3.16,0.0,1,78,0.223,74.325949,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Chennai,2025-05-27,476,61.68,29359.68,1,0.99,3.41,0.01,8,28,0.059,79.502886,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Chennai,2025-06-11,676,27.12,18333.12,7,0.96,4.65,0.05,7,8,0.012,84.766267,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Chennai,2025-03-23,155,53.32,8264.6,4,0.9,3.41,0.04,1,29,0.187,91.16345,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Delhi NCR,2025-03-08,612,32.16,19681.92,5,0.88,4.48,0.0,6,48,0.078,89.061448,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Delhi NCR,2025-02-12,334,30.45,10170.3,8,0.9,4.05,0.01,6,30,0.09,94.690133,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Hyderabad,2025-05-24,691,67.85,46884.35,8,0.88,3.76,0.04,9,72,0.104,78.9518,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Hyderabad,2025-03-25,310,51.52,15971.2,8,0.98,3.82,0.02,4,27,0.087,80.457474,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Hyderabad,2025-03-22,931,18.19,16934.89,8,0.99,3.43,0.01,3,0,0.0,93.16633,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Kolkata,2025-05-11,789,55.42,43726.38,6,0.96,4.02,0.02,6,9,0.011,83.714091,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Kolkata,2025-02-05,626,49.07,30717.82,9,0.92,3.13,0.03,5,83,0.133,74.372805,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Kolkata,2025-06-09,701,12.98,9098.98,5,0.98,4.11,0.04,4,23,0.033,77.018919,
+P20,Kissan Tomato Ketchup,S11,Synthetic Supplier ,Kolkata,2025-04-17,236,61.79,14582.44,3,0.91,3.93,0.03,4,19,0.081,79.113682,
+P3,Maggie,S11,Synthetic Supplier ,Ahmedabad,2025-06-29,765,50.09,38318.85,9,0.95,4.71,0.01,6,82,0.107,73.809343,
+P3,Maggie,S11,Synthetic Supplier ,Ahmedabad,2025-01-14,247,51.07,12614.29,2,0.98,3.45,0.04,8,84,0.34,87.731945,
+P3,Maggie,S11,Synthetic Supplier ,Ahmedabad,2025-03-23,969,17.95,17393.55,5,0.93,3.74,0.0,4,69,0.071,74.62938,
+P3,Maggie,S11,Synthetic Supplier ,Chennai,2025-05-07,733,35.58,26080.14,1,0.9,3.22,0.03,0,51,0.07,77.470323,
+P3,Maggie,S11,Synthetic Supplier ,Chennai,2025-02-06,295,49.36,14561.2,2,0.94,3.84,0.02,1,46,0.156,78.184054,
+P3,Maggie,S11,Synthetic Supplier ,Chennai,2025-05-27,290,43.26,12545.4,7,0.9,3.97,0.05,6,44,0.152,70.70996,
+P3,Maggie,S11,Synthetic Supplier ,Delhi NCR,2025-03-26,289,43.32,12519.48,4,0.87,3.25,0.01,4,30,0.104,84.003525,
+P3,Maggie,S11,Synthetic Supplier ,Delhi NCR,2025-02-04,969,28.59,27703.71,5,0.86,4.12,0.04,0,96,0.099,90.401081,
+P3,Maggie,S11,Synthetic Supplier ,Delhi NCR,2025-01-21,998,32.2,32135.6,6,0.94,4.41,0.05,2,69,0.069,94.310473,
+P3,Maggie,S11,Synthetic Supplier ,Delhi NCR,2025-04-27,696,38.54,26823.84,1,0.89,3.96,0.03,8,51,0.073,73.471572,
+P3,Maggie,S11,Synthetic Supplier ,Hyderabad,2025-03-18,892,42.25,37687.0,9,0.88,4.94,0.01,3,25,0.028,76.662571,
+P3,Maggie,S11,Synthetic Supplier ,Hyderabad,2025-03-29,810,20.9,16929.0,3,0.99,3.03,0.02,8,27,0.033,90.112534,
+P3,Maggie,S11,Synthetic Supplier ,Mumbai,2025-05-17,663,32.77,21726.51,2,0.97,4.23,0.0,7,87,0.131,91.296352,
+P3,Maggie,S11,Synthetic Supplier ,Mumbai,2025-04-09,742,69.98,51925.16,1,0.99,4.61,0.03,9,18,0.024,87.261569,
+P3,Maggie,S11,Synthetic Supplier ,Mumbai,2025-02-23,631,12.2,7698.2,7,0.89,4.79,0.04,1,53,0.084,74.335225,
+P4,Dabur Red,S11,Synthetic Supplier ,Ahmedabad,2025-04-03,742,38.27,28396.34,1,0.91,3.48,0.0,1,31,0.042,89.43242,
+P4,Dabur Red,S11,Synthetic Supplier ,Ahmedabad,2025-02-15,996,23.72,23625.12,9,0.99,3.26,0.02,9,64,0.064,74.066395,
+P4,Dabur Red,S11,Synthetic Supplier ,Ahmedabad,2025-01-10,506,35.71,18069.26,2,0.93,3.07,0.01,7,49,0.097,74.430924,
+P4,Dabur Red,S11,Synthetic Supplier ,Chennai,2025-06-05,924,40.07,37024.68,3,0.94,4.82,0.04,5,7,0.008,80.752486,
+P4,Dabur Red,S11,Synthetic Supplier ,Chennai,2025-03-16,491,59.03,28983.73,3,0.95,4.39,0.0,2,70,0.143,77.533569,
+P4,Dabur Red,S11,Synthetic Supplier ,Chennai,2025-06-25,746,47.18,35196.28,6,0.99,4.06,0.01,0,12,0.016,70.974144,
+P4,Dabur Red,S11,Synthetic Supplier ,Chennai,2025-02-08,697,46.69,32542.93,4,0.95,3.59,0.05,1,40,0.057,77.764715,
+P4,Dabur Red,S11,Synthetic Supplier ,Delhi NCR,2025-06-09,520,30.15,15678.0,3,0.98,3.06,0.05,8,78,0.15,79.160488,
+P4,Dabur Red,S11,Synthetic Supplier ,Hyderabad,2025-01-12,365,25.54,9322.1,6,0.95,4.43,0.02,6,48,0.132,73.62926,
+P4,Dabur Red,S11,Synthetic Supplier ,Hyderabad,2025-02-05,660,58.01,38286.6,3,0.95,4.37,0.04,6,21,0.032,93.388384,
+P4,Dabur Red,S11,Synthetic Supplier ,Hyderabad,2025-04-30,560,22.22,12443.2,2,0.93,4.39,0.04,2,36,0.064,77.427212,
+P4,Dabur Red,S11,Synthetic Supplier ,Hyderabad,2025-01-14,267,35.87,9577.29,4,0.92,4.38,0.01,8,21,0.079,80.611154,
+P4,Dabur Red,S11,Synthetic Supplier ,Kolkata,2025-01-07,937,24.18,22656.66,1,0.93,3.65,0.01,2,37,0.039,93.181943,
+P4,Dabur Red,S11,Synthetic Supplier ,Kolkata,2025-03-15,946,18.11,17132.06,5,0.86,3.22,0.04,2,23,0.024,84.895212,
+P4,Dabur Red,S11,Synthetic Supplier ,Kolkata,2025-06-12,892,64.02,57105.84,4,0.97,4.94,0.05,0,8,0.009,92.081848,
+P4,Dabur Red,S11,Synthetic Supplier ,Kolkata,2025-02-11,728,31.84,23179.52,4,0.92,3.42,0.03,1,59,0.081,85.880289,
+P4,Dabur Red,S11,Synthetic Supplier ,Mumbai,2025-02-12,617,55.97,34533.49,6,0.9,3.34,0.05,3,79,0.128,70.182801,
+P4,Dabur Red,S11,Synthetic Supplier ,Mumbai,2025-06-01,520,62.81,32661.2,9,0.88,4.4,0.0,6,11,0.021,86.255596,
+P4,Dabur Red,S11,Synthetic Supplier ,Mumbai,2025-06-05,634,36.21,22957.14,9,0.87,4.74,0.01,4,3,0.005,84.793548,
+P4,Dabur Red,S11,Synthetic Supplier ,Mumbai,2025-03-23,336,53.14,17855.04,3,0.89,3.59,0.04,2,55,0.164,94.854802,
+P5,Bournvita,S11,Synthetic Supplier ,Ahmedabad,2025-02-27,121,59.85,7241.85,6,0.99,4.97,0.04,5,10,0.083,79.690494,
+P5,Bournvita,S11,Synthetic Supplier ,Ahmedabad,2025-05-11,300,65.67,19701.0,1,0.87,4.46,0.04,6,89,0.297,84.046645,
+P5,Bournvita,S11,Synthetic Supplier ,Ahmedabad,2025-01-02,972,41.49,40328.28,5,0.95,4.64,0.05,7,23,0.024,91.49079,
+P5,Bournvita,S11,Synthetic Supplier ,Bengaluru,2025-04-12,916,67.01,61381.16,9,0.97,3.62,0.05,7,61,0.067,86.167145,
+P5,Bournvita,S11,Synthetic Supplier ,Bengaluru,2025-02-18,495,42.22,20898.9,6,0.92,4.89,0.03,0,60,0.121,94.063656,
+P5,Bournvita,S11,Synthetic Supplier ,Bengaluru,2025-04-30,663,23.38,15500.94,9,1.0,4.75,0.04,2,88,0.133,73.535803,
+P5,Bournvita,S11,Synthetic Supplier ,Chennai,2025-01-29,268,33.27,8916.36,6,0.88,3.35,0.03,2,37,0.138,80.81309,
+P5,Bournvita,S11,Synthetic Supplier ,Chennai,2025-01-15,718,57.39,41206.02,8,0.99,4.02,0.03,4,59,0.082,72.742217,
+P5,Bournvita,S11,Synthetic Supplier ,Chennai,2025-05-25,919,61.52,56536.88,3,0.86,3.3,0.03,4,12,0.013,79.181258,
+P5,Bournvita,S11,Synthetic Supplier ,Hyderabad,2025-05-21,973,69.72,67837.56,3,0.94,3.37,0.0,3,64,0.066,94.74534,
+P5,Bournvita,S11,Synthetic Supplier ,Hyderabad,2025-01-21,600,51.88,31128.0,1,0.91,3.82,0.04,4,7,0.012,85.767218,
+P5,Bournvita,S11,Synthetic Supplier ,Hyderabad,2025-01-30,420,55.36,23251.2,1,0.92,4.97,0.02,6,90,0.214,78.736931,
+P5,Bournvita,S11,Synthetic Supplier ,Kolkata,2025-01-03,469,26.13,12254.97,1,0.98,4.61,0.0,9,14,0.03,82.047828,
+P5,Bournvita,S11,Synthetic Supplier ,Kolkata,2025-06-03,206,49.35,10166.1,4,0.95,3.44,0.04,4,94,0.456,70.429769,
+P5,Bournvita,S11,Synthetic Supplier ,Kolkata,2025-01-02,641,11.25,7211.25,1,0.86,3.57,0.0,6,21,0.033,93.493009,
+P5,Bournvita,S11,Synthetic Supplier ,Kolkata,2025-01-11,951,19.83,18858.33,4,0.98,3.92,0.05,6,69,0.073,92.233756,
+P5,Bournvita,S11,Synthetic Supplier ,Mumbai,2025-04-06,306,12.53,3834.18,4,0.94,4.43,0.05,1,25,0.082,70.48181,
+P5,Bournvita,S11,Synthetic Supplier ,Mumbai,2025-05-16,674,68.0,45832.0,6,0.99,3.03,0.05,6,4,0.006,88.626445,
+P5,Bournvita,S11,Synthetic Supplier ,Mumbai,2025-02-23,477,61.13,29159.01,9,0.93,3.55,0.02,5,87,0.182,85.345832,
+P5,Bournvita,S11,Synthetic Supplier ,Mumbai,2025-06-02,917,64.26,58926.42,7,0.92,4.95,0.01,0,52,0.057,87.231725,
+P6,Sensodyne,S11,Synthetic Supplier ,Bengaluru,2025-03-22,652,57.9,37750.8,7,0.89,3.93,0.02,2,69,0.106,90.505946,
+P6,Sensodyne,S11,Synthetic Supplier ,Chennai,2025-06-26,858,29.08,24950.64,3,0.93,4.58,0.02,8,24,0.028,84.501083,
+P6,Sensodyne,S11,Synthetic Supplier ,Chennai,2025-03-11,897,36.06,32345.82,7,0.9,4.55,0.04,8,95,0.106,92.765791,
+P6,Sensodyne,S11,Synthetic Supplier ,Chennai,2025-03-12,976,54.83,53514.08,5,0.91,4.05,0.04,9,71,0.073,77.501971,
+P6,Sensodyne,S11,Synthetic Supplier ,Chennai,2025-01-30,120,49.2,5904.0,1,0.97,3.2,0.03,7,5,0.042,82.430257,
+P6,Sensodyne,S11,Synthetic Supplier ,Delhi NCR,2025-05-31,292,36.22,10576.24,2,0.96,4.71,0.02,4,47,0.161,72.086685,
+P6,Sensodyne,S11,Synthetic Supplier ,Delhi NCR,2025-03-19,488,12.35,6026.8,7,0.91,4.49,0.04,6,81,0.166,85.618843,
+P6,Sensodyne,S11,Synthetic Supplier ,Delhi NCR,2025-06-12,533,29.62,15787.46,8,0.94,4.81,0.0,4,92,0.173,92.293775,
+P6,Sensodyne,S11,Synthetic Supplier ,Delhi NCR,2025-06-23,671,33.76,22652.96,7,0.91,4.37,0.04,9,33,0.049,70.972787,
+P6,Sensodyne,S11,Synthetic Supplier ,Hyderabad,2025-03-23,554,68.61,38009.94,9,1.0,3.27,0.05,1,53,0.096,76.788271,
+P6,Sensodyne,S11,Synthetic Supplier ,Hyderabad,2025-06-27,846,20.22,17106.12,3,0.94,4.06,0.01,8,95,0.112,89.568732,
+P6,Sensodyne,S11,Synthetic Supplier ,Hyderabad,2025-03-16,550,66.19,36404.5,1,0.89,3.54,0.05,3,16,0.029,73.106732,
+P6,Sensodyne,S11,Synthetic Supplier ,Hyderabad,2025-02-01,720,23.01,16567.2,7,0.9,3.55,0.03,9,71,0.099,79.889122,
+P6,Sensodyne,S11,Synthetic Supplier ,Kolkata,2025-01-25,958,67.36,64530.88,7,0.96,4.05,0.0,2,70,0.073,94.519542,
+P6,Sensodyne,S11,Synthetic Supplier ,Kolkata,2025-06-11,868,38.12,33088.16,4,0.94,3.18,0.04,5,7,0.008,70.842155,
+P6,Sensodyne,S11,Synthetic Supplier ,Kolkata,2025-06-19,440,52.21,22972.4,4,0.88,4.35,0.01,4,87,0.198,74.915801,
+P6,Sensodyne,S11,Synthetic Supplier ,Kolkata,2025-06-16,938,50.28,47162.64,7,0.99,3.6,0.04,8,93,0.099,87.91525,
+P6,Sensodyne,S11,Synthetic Supplier ,Mumbai,2025-05-15,664,29.57,19634.48,6,0.92,3.02,0.02,4,47,0.071,89.901717,
+P6,Sensodyne,S11,Synthetic Supplier ,Mumbai,2025-03-18,139,25.28,3513.92,6,0.95,4.25,0.03,0,48,0.345,73.45916,
+P6,Sensodyne,S11,Synthetic Supplier ,Mumbai,2025-03-27,828,24.65,20410.2,5,0.87,4.45,0.05,2,84,0.101,92.835011,
+P7,Parle-G,S11,Synthetic Supplier ,Ahmedabad,2025-05-29,943,22.06,20802.58,1,0.85,3.54,0.03,6,75,0.08,89.886574,
+P7,Parle-G,S11,Synthetic Supplier ,Ahmedabad,2025-04-14,958,15.71,15050.18,3,0.87,4.95,0.0,1,92,0.096,94.730633,
+P7,Parle-G,S11,Synthetic Supplier ,Bengaluru,2025-02-05,855,48.78,41706.9,5,0.96,4.99,0.01,7,31,0.036,70.363474,
+P7,Parle-G,S11,Synthetic Supplier ,Bengaluru,2025-02-14,843,30.43,25652.49,6,0.91,3.97,0.01,7,61,0.072,88.373013,
+P7,Parle-G,S11,Synthetic Supplier ,Bengaluru,2025-05-18,437,53.78,23501.86,1,0.98,4.28,0.01,3,67,0.153,73.879887,
+P7,Parle-G,S11,Synthetic Supplier ,Delhi NCR,2025-02-26,496,34.62,17171.52,7,0.92,4.78,0.04,3,77,0.155,77.682831,
+P7,Parle-G,S11,Synthetic Supplier ,Delhi NCR,2025-05-02,179,11.74,2101.46,9,1.0,3.48,0.02,5,32,0.179,76.659215,
+P7,Parle-G,S11,Synthetic Supplier ,Delhi NCR,2025-04-25,835,28.68,23947.8,8,0.94,3.57,0.02,5,87,0.104,84.304897,
+P7,Parle-G,S11,Synthetic Supplier ,Delhi NCR,2025-02-27,110,19.58,2153.8,1,0.89,3.42,0.03,8,79,0.718,74.051565,
+P7,Parle-G,S11,Synthetic Supplier ,Hyderabad,2025-03-20,245,58.95,14442.75,7,0.91,3.83,0.03,6,59,0.241,94.633313,
+P7,Parle-G,S11,Synthetic Supplier ,Hyderabad,2025-03-05,198,27.98,5540.04,1,0.9,3.72,0.03,5,3,0.015,78.761786,
+P7,Parle-G,S11,Synthetic Supplier ,Hyderabad,2025-06-06,517,13.0,6721.0,9,0.92,3.06,0.0,0,10,0.019,75.324254,
+P7,Parle-G,S11,Synthetic Supplier ,Kolkata,2025-05-08,357,58.37,20838.09,8,0.9,4.24,0.0,9,77,0.216,72.384844,
+P7,Parle-G,S11,Synthetic Supplier ,Kolkata,2025-03-02,933,32.21,30051.93,6,0.86,3.7,0.03,6,14,0.015,72.473063,
+P7,Parle-G,S11,Synthetic Supplier ,Kolkata,2025-01-02,800,61.56,49248.0,3,0.93,4.3,0.02,2,88,0.11,90.522189,
+P7,Parle-G,S11,Synthetic Supplier ,Kolkata,2025-04-22,915,15.92,14566.8,8,0.98,3.82,0.03,7,86,0.094,88.065204,
+P7,Parle-G,S11,Synthetic Supplier ,Mumbai,2025-04-16,975,15.9,15502.5,5,0.85,3.67,0.01,9,10,0.01,94.652726,
+P7,Parle-G,S11,Synthetic Supplier ,Mumbai,2025-01-16,780,34.56,26956.8,4,0.88,3.2,0.04,3,20,0.026,73.35617,
+P7,Parle-G,S11,Synthetic Supplier ,Mumbai,2025-01-16,597,38.46,22960.62,4,0.91,3.42,0.03,7,2,0.003,74.285664,
+P7,Parle-G,S11,Synthetic Supplier ,Mumbai,2025-01-11,626,44.65,27950.9,5,0.93,4.76,0.03,5,57,0.091,86.337721,
+P8,Garden Successful,S11,Synthetic Supplier ,Bengaluru,2025-02-20,933,38.37,35799.21,6,0.97,4.15,0.04,6,60,0.064,87.187793,
+P8,Garden Successful,S11,Synthetic Supplier ,Bengaluru,2025-04-02,678,51.18,34700.04,7,0.85,3.53,0.01,2,16,0.024,76.837217,
+P8,Garden Successful,S11,Synthetic Supplier ,Bengaluru,2025-03-22,257,18.31,4705.67,6,0.9,4.71,0.03,9,52,0.202,80.86559,
+P8,Garden Successful,S11,Synthetic Supplier ,Chennai,2025-02-14,741,53.08,39332.28,8,0.9,4.81,0.02,5,45,0.061,88.020528,
+P8,Garden Successful,S11,Synthetic Supplier ,Chennai,2025-05-01,606,44.78,27136.68,6,0.9,4.49,0.02,7,61,0.101,89.12044,
+P8,Garden Successful,S11,Synthetic Supplier ,Chennai,2025-02-14,277,69.98,19384.46,6,0.94,3.35,0.01,5,2,0.007,86.921916,
+P8,Garden Successful,S11,Synthetic Supplier ,Chennai,2025-03-24,206,57.85,11917.1,5,0.95,3.49,0.01,2,64,0.311,74.293779,
+P8,Garden Successful,S11,Synthetic Supplier ,Hyderabad,2025-03-22,280,30.62,8573.6,2,0.92,3.52,0.05,0,2,0.007,74.440792,
+P8,Garden Successful,S11,Synthetic Supplier ,Hyderabad,2025-04-04,426,51.46,21921.96,8,0.86,3.33,0.04,1,75,0.176,84.666202,
+P8,Garden Successful,S11,Synthetic Supplier ,Hyderabad,2025-02-27,379,50.51,19143.29,9,0.98,3.12,0.01,4,85,0.224,82.116787,
+P8,Garden Successful,S11,Synthetic Supplier ,Kolkata,2025-06-12,581,38.99,22653.19,6,0.93,4.32,0.01,0,16,0.028,86.316694,
+P8,Garden Successful,S11,Synthetic Supplier ,Kolkata,2025-01-03,935,64.3,60120.5,6,0.92,3.14,0.02,8,10,0.011,71.27016,
+P8,Garden Successful,S11,Synthetic Supplier ,Mumbai,2025-03-18,175,57.56,10073.0,8,0.94,4.38,0.04,6,22,0.126,90.298529,
+P8,Garden Successful,S11,Synthetic Supplier ,Mumbai,2025-04-01,120,53.8,6456.0,4,0.98,4.31,0.03,7,8,0.067,90.079731,
+P8,Garden Successful,S11,Synthetic Supplier ,Mumbai,2025-01-13,645,28.08,18111.6,3,0.96,4.49,0.01,6,7,0.011,80.963794,
+P9,Tide Detergent,S11,Synthetic Supplier ,Ahmedabad,2025-03-06,931,58.42,54389.02,9,0.88,3.31,0.02,8,55,0.059,78.091565,
+P9,Tide Detergent,S11,Synthetic Supplier ,Ahmedabad,2025-01-01,811,19.97,16195.67,1,0.97,3.98,0.01,5,41,0.051,82.854152,
+P9,Tide Detergent,S11,Synthetic Supplier ,Ahmedabad,2025-02-07,239,36.74,8780.86,6,0.92,4.28,0.04,4,22,0.092,77.253814,
+P9,Tide Detergent,S11,Synthetic Supplier ,Ahmedabad,2025-04-04,806,28.14,22680.84,4,0.9,4.41,0.03,6,64,0.079,76.76177,
+P9,Tide Detergent,S11,Synthetic Supplier ,Bengaluru,2025-06-27,802,22.65,18165.3,8,0.98,3.93,0.03,8,9,0.011,75.645578,
+P9,Tide Detergent,S11,Synthetic Supplier ,Bengaluru,2025-05-12,526,20.26,10656.76,7,0.96,4.37,0.03,7,11,0.021,82.697919,
+P9,Tide Detergent,S11,Synthetic Supplier ,Bengaluru,2025-01-27,833,16.94,14111.02,5,0.94,4.41,0.03,8,77,0.092,70.902227,
+P9,Tide Detergent,S11,Synthetic Supplier ,Bengaluru,2025-06-28,338,37.35,12624.3,8,0.87,3.79,0.04,2,53,0.157,86.985263,
+P9,Tide Detergent,S11,Synthetic Supplier ,Chennai,2025-02-02,987,28.7,28326.9,3,0.97,4.68,0.03,9,44,0.045,86.109146,
+P9,Tide Detergent,S11,Synthetic Supplier ,Chennai,2025-04-08,317,37.58,11912.86,9,0.91,4.67,0.04,7,58,0.183,90.188707,
+P9,Tide Detergent,S11,Synthetic Supplier ,Chennai,2025-01-05,576,60.41,34796.16,2,0.95,4.6,0.03,4,71,0.123,92.704387,
+P9,Tide Detergent,S11,Synthetic Supplier ,Chennai,2025-03-20,710,40.82,28982.2,9,0.87,4.36,0.03,3,36,0.051,74.026638,
+P9,Tide Detergent,S11,Synthetic Supplier ,Delhi NCR,2025-01-18,421,27.65,11640.65,2,0.95,3.12,0.0,7,40,0.095,93.596991,
+P9,Tide Detergent,S11,Synthetic Supplier ,Delhi NCR,2025-05-15,961,50.06,48107.66,9,0.96,3.26,0.04,4,78,0.081,75.698104,
+P9,Tide Detergent,S11,Synthetic Supplier ,Delhi NCR,2025-05-31,975,18.47,18008.25,3,0.9,4.63,0.01,7,19,0.019,83.551113,
+P9,Tide Detergent,S11,Synthetic Supplier ,Delhi NCR,2025-01-23,225,33.69,7580.25,3,1.0,3.83,0.04,2,33,0.147,84.704652,
+P9,Tide Detergent,S11,Synthetic Supplier ,Kolkata,2025-05-19,999,17.19,17172.81,7,0.9,3.03,0.0,7,26,0.026,82.613755,
+P9,Tide Detergent,S11,Synthetic Supplier ,Kolkata,2025-01-20,781,13.04,10184.24,4,0.96,3.89,0.05,1,64,0.082,78.234829,
+P9,Tide Detergent,S11,Synthetic Supplier ,Mumbai,2025-03-11,320,64.54,20652.8,8,0.88,4.49,0.05,6,16,0.05,83.775736,
+P9,Tide Detergent,S11,Synthetic Supplier ,Mumbai,2025-02-11,497,68.11,33850.67,8,0.93,4.46,0.04,6,23,0.046,84.1727,
