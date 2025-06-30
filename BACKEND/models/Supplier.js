@@ -1,16 +1,30 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const supplierSchema = new mongoose.Schema({
-  name: String,             // Supplier Name
-  region: String,           // Region (for heatmap/filter)
-  product: String,          // Product category/type
-  onTimeDelivery: Number,   // %
-  orderAccuracy: Number,    // %
-  packagingRating: Number,  // Rating out of 5
-  returnRate: Number,       // %
-  fulfillmentTime: Number,  // in hours/days
-  performanceScore: Number, // ML-based score (0–100)
-  status: String            // green/yellow/red etc.
-}, { timestamps: true });
+  product_id: String,
+  product_name: String,
+  supplier_id: String,
+  supplier_name: String,
+  region: String,
+  purchase_date: String,
+  units_purchased: Number,
+  unit_cost: Number,
+  total_cost: Number,
+  delivery_time_days: Number,
+  qc_pass_rate: Number,
+  customer_rating_avg: Number,
+  damaged_on_arrival: Number,
+  complaint_count: Number,
+  units_returned: Number,
+  return_rate: Number,
+  supplier_score: Number,
+  supplier_rank: Number,
+  predicted_supplier_score: Number,
+  predicted_supplier_rank: Number,
+  timestamp: { type: Date, default: Date.now },
+   
+  
+},{collection: 'ml_outputs'});
 
-module.exports = mongoose.model("Supplier", supplierSchema);
+// ✅ Force collection to 'ml_output'
+export default mongoose.model('Supplier', supplierSchema, 'ml_outputs');

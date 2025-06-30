@@ -1,13 +1,7 @@
-const express = require('express');
+import express from 'express';
+import { getFilteredSuppliers } from '../controllers/supplierController.js';
 const router = express.Router();
-const {
-  getSuppliers,
-  addSupplier,
-  updateSupplier
-} = require('../controllers/supplierController');
 
-router.get('/', getSuppliers);
-router.post('/', addSupplier);
-router.put('/:id', updateSupplier);
+router.get('/', getFilteredSuppliers);
 
-module.exports = router;
+export default router;

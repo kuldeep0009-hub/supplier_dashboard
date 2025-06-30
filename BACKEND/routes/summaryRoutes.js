@@ -1,14 +1,7 @@
-// routes/summaryRoutes.js
-const express = require('express');
+import express from 'express';
+import { getSummary } from '../controllers/summarycontroller.js';
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  // Fetch ya mock summary data yaha send karo
-  res.json({
-    bestSupplier: { name: "TechCorp Solutions", score: 95 },
-    mostFlaggedProduct: { name: "Smartphones", issueCount: 8 },
-    averageScoreTrend: 87
-  });
-});
+router.get('/', getSummary);
 
-module.exports = router;
+export default router;

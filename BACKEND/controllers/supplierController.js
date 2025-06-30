@@ -1,33 +1,53 @@
-const Supplier = require('../models/Supplier');
-const axios = require('axios');
+import Supplier from '../models/Supplier.js';
 
-// GET all suppliers with filters
-const getSuppliers = async (req, res) => {
+export const getFilteredSuppliers = async (req, res) => {
   try {
-    // Filters from query params
-    const { region, product, supplier } = req.query;
+    const filters = {};
 
-    // Query object
-    let query = {};
-    if (region && region !== 'All') query.region = region;
-    if (product && product !== 'All') query.product = product;
-    if (supplier && supplier !== 'All') query.name = supplier;
+    if (req.query.region) {
+      filters.region = req.query.region;
+    }
+    if (req.query.product_name) {
+      filters.product_name = req.query.product_name;
+    }
 
-    const suppliers = await Supplier.find(query);
-    res.json(suppliers);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ error: 'Internal Server Error' });
+    const suppliers = await Supplier.aggregate([
+      { $match: filters },
+
+      // Step 1: Sort by purchase_date desc so latest comes first
+      {
+        $sort: {
+          createdAt: -1
+        }
+      },
+
+      // Step 2: Group by supplier_name + product_name to get latest for each product per supplier
+      {
+        $group: {
+          _id: {
+            supplier_name: "$supplier_name",
+            product_name: "$product_name"
+          },
+          doc: { $first: "$$ROOT" }
+        }
+      },
+
+      // Step 3: Flatten the structure
+      {
+        $replaceRoot: { newRoot: "$doc" }
+      },
+
+      // Step 4: Final sort by supplier_score descending
+      {
+        $sort: {
+          supplier_score: -1
+        }
+      }
+    ]);
+
+    res.status(200).json(suppliers);
+  } catch (error) {
+    console.error("Error in getFilteredSuppliers:", error);
+    res.status(500).json({ error: "Server Error" });
   }
 };
-
-// AddSupplier and updateSupplier as before (no change needed)
-const addSupplier = async (req, res) => {
-  //... tera existing code yahi rahega
-};
-
-const updateSupplier = async (req, res) => {
-  //... tera existing code yahi rahega
-};
-
-module.exports = { getSuppliers, addSupplier, updateSupplier };

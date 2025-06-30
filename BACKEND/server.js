@@ -1,22 +1,20 @@
-const express = require('express');
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const connectDB = require('./config/db');
-const dotenv = require('dotenv');
-const axios = require("axios");
-const apiRoutes = require("./routes/api");
+import express from "express";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+import supplierRoutes from "./routes/supplierRoutes.js";
+import summaryRoutes from "./routes/summaryRoutes.js";
 
 dotenv.config();
-connectDB();
-
 const app = express();
-app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 
-app.use('/api/suppliers', require('./routes/supplierRoutes'));
-app.use('/api/ml', require('./routes/ml'));
-app.use('/api/summary', require('./routes/summaryRoutes'));
-app.use("/api", apiRoutes);
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("MongoDB Connected"))
+  .catch((err) => console.log(err));
+
+app.use("/api/suppliers", supplierRoutes);
+app.use("/api/summary", summaryRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
