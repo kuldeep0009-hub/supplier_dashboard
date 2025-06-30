@@ -1,12 +1,12 @@
 import joblib
 from sklearn.multioutput import MultiOutputRegressor
-from sklearn.ensemble import AdaBoostRegressor
+from sklearn.ensemble import GradientBoostingRegressor
 
 from sklearn.linear_model import LinearRegression
 
 def train_final_model(x_train,y_train):
-    model = MultiOutputRegressor(AdaBoostRegressor(
-        estimator=LinearRegression(), 
+    model = MultiOutputRegressor(GradientBoostingRegressor(
+        
         n_estimators=100, 
         learning_rate=1.0
     ))

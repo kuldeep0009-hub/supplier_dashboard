@@ -1,42 +1,18 @@
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder, MinMaxScaler
+from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
 from sklearn.compose import ColumnTransformer
 import joblib
 
-#LabelEncoders
-le_supplier = LabelEncoder()
-le_product = LabelEncoder()
-le_supplier_id = LabelEncoder()
-le_product_name = LabelEncoder()
-
-
 def preprocess_data(df: pd.DataFrame, fit=True):
     df = df.copy()
-    df.drop(columns=["purchase_date"], inplace=True)
-
-
-    if fit:
-        df["supplier_name"] = le_supplier.fit_transform(df["supplier_name"])
-        df["product_id"] = le_product.fit_transform(df["product_id"])
-        df["supplier_id"] = le_supplier_id.fit_transform(df["supplier_id"])
-        df['product_name'] = le_product_name.fit_transform(df['product_name'])
-
-        
-        # Save encoders
-        joblib.dump(le_supplier, "le_supplier.pkl")
-        joblib.dump(le_product, "le_product.pkl")
-        joblib.dump(le_supplier_id, "le_supplier_id.pkl")
-        joblib.dump(le_product_name, "le_product_name.pkl")
-    else:
-        df["supplier_name"] = joblib.load("le_supplier.pkl").transform(df["supplier_name"])
-        df["product_id"] = joblib.load("le_product.pkl").transform(df["product_id"])
-        df["supplier_id"] = joblib.load("le_supplier_id.pkl").transform(df["supplier_id"])
-        df['product_name'] = joblib.load("le_product_name.pkl").transform(df['product_name'])
-
+    df.drop(columns=["purchase_date"], inplace=True, errors="ignore")  # safe drop
 
     # Define features
-    onehot_feature = ['region']
-    num_feature = df.select_dtypes(exclude='object').columns
+    categorical_features = ["region"]  # only region is one-hot encoded
+    numerical_features = df.select_dtypes(include=['int64', 'float64']).columns.tolist()
+
+    # Remove target columns if present
+    numerical_features = [col for col in numerical_features if col not in ["supplier_score", "supplier_rank"]]
 
     # Transformers
     numeric_transformer = MinMaxScaler()
@@ -45,17 +21,17 @@ def preprocess_data(df: pd.DataFrame, fit=True):
     # Column Transformer
     preprocessing = ColumnTransformer(
         transformers=[
-            ("onehotencoder", oh_transformer, onehot_feature),
-            ("minmaxscaler", numeric_transformer, num_feature)
+            ("onehotencoder", oh_transformer, categorical_features),
+            ("minmaxscaler", numeric_transformer, numerical_features)
         ],
-        remainder="passthrough"
+        remainder="drop"
     )
 
     if fit:
         preprocessed_data = preprocessing.fit_transform(df)
         joblib.dump(preprocessing, "preprocessing_pipeline.pkl")
-        return preprocessed_data, preprocessing
     else:
-        loaded_pipeline = joblib.load("preprocessing_pipeline.pkl")
-        preprocessed_data = loaded_pipeline.transform(df)
-        return preprocessed_data
+        preprocessing = joblib.load("preprocessing_pipeline.pkl")
+        preprocessed_data = preprocessing.transform(df)
+
+    return preprocessed_data

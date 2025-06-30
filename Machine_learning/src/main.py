@@ -10,6 +10,8 @@ import joblib
 import pandas as pd
 
 def run():
+
+
     
     df = load_data()
     X= df.drop(columns=["supplier_score", "supplier_rank"])
