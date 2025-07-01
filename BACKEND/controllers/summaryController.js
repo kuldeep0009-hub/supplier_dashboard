@@ -14,7 +14,7 @@ export const getSummary = async (req, res) => {
     const bestSupplier = data.reduce((a, b) =>
       a.supplier_score > b.supplier_score ? a : b
     );
-
+     
     // 3. Worst Product by QC pass rate
     const worstProduct = data.reduce((a, b) =>
       a.qc_pass_rate < b.qc_pass_rate ? a : b
@@ -33,9 +33,10 @@ export const getSummary = async (req, res) => {
     const lastMonthScores = lastMonthData.map((d) => d.supplier_score);
 
     const avg = (arr) => arr.reduce((a, b) => a + b, 0) / (arr.length || 1);
-    const trend = avg(currentScores) - avg(lastMonthScores);
+    const trend = avg(currentScores) - avg(lastMonthScores);  
     const percentageChange = (trend / (avg(lastMonthScores) || 1)) * 100;
-
+     console.log(percentageChange);
+     
     // 5. Final Response
     res.json({
       bestSupplier,

@@ -1,29 +1,72 @@
-import React, { useState } from 'react';
-import { CalendarDays, ChevronDown } from 'lucide-react';
+import React, { useState,useEffect } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 const FilterSection = ({ onFiltersChange }) => {
   const [selectedRegion, setSelectedRegion] = useState('All');
   const [selectedSupplier, setSelectedSupplier] = useState('All');
   const [selectedProduct, setSelectedProduct] = useState('All');
-  const [selectedDateRange, setSelectedDateRange] = useState('Last 30 days');
 
-  const regions = ['All', 'Delhi', 'Mumbai', 'Bangalore', 'Chennai', 'Kolkata'];
-  const suppliers = ['All', 'TechCorp Solutions', 'Global Supply Co', 'Premium Parts Ltd', 'Quality First Inc', 'Reliable Suppliers'];
-  const products = ['All', 'Laptops', 'Smartphones', 'Tablets', 'Headphones', 'Accessories'];
-  const dateRanges = ['Last 7 days', 'Last 30 days', 'Last 90 days', 'Custom'];
+  const regions = ['All', 'Delhi NCR', 'Mumbai', 'Ahmedabad', 'Hyderabad', 'Kolkata','Chennai','Bengaluru'];
+
+  const suppliers = [
+  "All",
+  "Synthetic Supplier",
+  "TruValue Commerce",
+  "Elite Distributors",
+  "Thornton Ltd",
+  "Flores-Cook",
+  "BrightPath Wholesale",
+  "Bass Group",
+  "Everest Wholesale",
+  "Thompson Group",
+  "Nelson-Ramirez",
+  "Martin-Mcdowell",
+  "Bond-Adkins",
+  "Terry, Smith and Weber",
+  "Bell, Gardner and Brown",
+  "UrbanKart Distributors",
+  "Zenith Global Exports",
+  "PrimeMart Supplies",
+  "Quantum Traders",
+  "Murphy, Aguilar and Zimmerman",
+  "NextGen Distributors"
+];
+
+  const products = ['All',
+ 'Bournvita',
+ 'Britania marrie biscuit',
+ 'Cadbury Dairy Milk',
+ 'Dabur Red',
+ 'Dawat Rice',
+ 'Dove shampoo',
+ 'Garden Successful',
+ 'Garnier Facewash',
+ 'Kissan Tomato Ketchup',
+ 'Lays potato chips',
+ 'Lux Soap',
+ 'Maggie',
+ 'Manforce Condom',
+ 'Oreo Biscuit',
+ 'Parle-G',
+ 'Sensodyne',
+ 'Surf Excel Detergent',
+ 'Taj Tea',
+ 'Tata Tea',
+ 'Tide Detergent'];
+ 
 
   const handleFilterChange = () => {
     onFiltersChange({
       region: selectedRegion,
       supplier: selectedSupplier,
       product: selectedProduct,
-      dateRange: selectedDateRange
+      
     });
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     handleFilterChange();
-  }, [selectedRegion, selectedSupplier, selectedProduct, selectedDateRange]);
+  }, [selectedRegion, selectedSupplier, selectedProduct]);
 
   const SelectDropdown = ({ label, value, options, onChange }) => (
     <div className="flex flex-col">
@@ -49,7 +92,7 @@ const FilterSection = ({ onFiltersChange }) => {
 
   return (
     <div className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-6 mb-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <SelectDropdown
           label="Region"
           value={selectedRegion}
@@ -68,7 +111,7 @@ const FilterSection = ({ onFiltersChange }) => {
           options={products}
           onChange={setSelectedProduct}
         />
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           <label className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             Date Range
           </label>
@@ -86,7 +129,7 @@ const FilterSection = ({ onFiltersChange }) => {
             </select>
             <CalendarDays className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500 pointer-events-none" />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

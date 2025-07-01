@@ -1,5 +1,6 @@
 import React from 'react';
 import { TrendingUp, Map } from 'lucide-react';
+import axiosInstance from '../api/axiosInstance';
 
 const GraphSection = () => {
   // Mock data for line chart visualization
@@ -40,9 +41,9 @@ const GraphSection = () => {
       </div>
       
       <div className="relative h-64">
-        <div className="absolute inset-0 flex items-end justify-between gap-4">
-          {lineChartData.map((data, index) => (
-            <div key={data.month} className="flex flex-col items-center flex-1">
+        <div className="absolute inset-0 flex items-end justify-between gap-4 px-4">
+          {lineChartData.map((data) => (
+            <div key={data.month} className="flex flex-col items-center flex-1 h-full">
               <div
                 className="w-full bg-gradient-to-t from-blue-500 to-blue-400 rounded-t-md transition-all duration-500 hover:from-blue-600 hover:to-blue-500 cursor-pointer"
                 style={{ height: `${(data.score / 100) * 100}%` }}

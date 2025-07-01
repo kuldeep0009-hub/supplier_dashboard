@@ -54,9 +54,9 @@ function App() {
       <main className="container mx-auto px-4 py-8">
         <FilterSection onFiltersChange={handleFiltersChange} />
         <SummaryCards />
-        <ScoreTable />
-        <GraphSection />
-        <SupplierDataForm />
+        <ScoreTable filters ={filters} />
+        <GraphSection filters={filters} />
+        <SupplierDataForm filters={filters} />
       </main>
 
       {/* Footer */}

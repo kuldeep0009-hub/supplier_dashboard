@@ -1,27 +1,43 @@
-import React from 'react';
 import { Trophy, AlertTriangle, TrendingUp } from 'lucide-react';
-
+import { useState,useEffect } from 'react';
+import axiosInstance from '../api/axiosInstance';
 const SummaryCards = () => {
+  const [summary, setSummary] = useState(null);
+  useEffect(() => {
+    axiosInstance.get('/summary')
+      .then((res) => {
+        setSummary(res.data); // Assuming res.data has keys: bestSupplier, worstProduct, avgScoreTrend
+      })
+      .catch((err) => {
+        console.error("Error fetching summary data:", err);
+      });
+  }, []);
+  
+  if (!summary) {
+  return <div>Loading summary...</div>;
+}
+
+  
   const cards = [
     {
       title: 'Best Performing Supplier',
-      value: 'TechCorp Solutions',
-      subtitle: '96.2% Performance Score',
+      value: summary.bestSupplier.supplier_name || 'N/A',
+      subtitle: `${Math.round(summary.bestSupplier.predicted_supplier_score*100)/100} Performance Score`,
       icon: Trophy,
       gradient: 'from-emerald-500 to-emerald-600',
       bgGradient: 'from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-emerald-800/20'
     },
     {
       title: 'Most Flagged Product',
-      value: 'Tablets',
-      subtitle: '12 Quality Issues',
+      value: summary.worstProduct.product_name || 'N?A',
+      subtitle: `${summary.worstProduct.qc_pass_rate*100}/100 Quality Score`,
       icon: AlertTriangle,
       gradient: 'from-amber-500 to-amber-600',
       bgGradient: 'from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20'
     },
     {
       title: 'Average Score Trend',
-      value: '+5.3%',
+      value: summary.avgScoreTrend,
       subtitle: 'vs. Last Month',
       icon: TrendingUp,
       gradient: 'from-blue-500 to-blue-600',
