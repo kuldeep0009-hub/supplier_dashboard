@@ -11,12 +11,15 @@ export const getSummary = async (req, res) => {
     if (data.length === 0) return res.json({ message: "No data found" });
 
     // 2. Best Supplier by supplier_score
-    const bestSupplier = data.reduce((a, b) =>
+    const filteredData = data.filter(d => d.supplier_score != null);
+
+    const bestSupplier = filteredData.reduce((a, b) =>
       a.supplier_score > b.supplier_score ? a : b
     );
      
     // 3. Worst Product by QC pass rate
-    const worstProduct = data.reduce((a, b) =>
+    const filteredDataAccordingToQcpassrate=data.filter(d => d.qc_pass_rate != null);
+    const worstProduct = filteredDataAccordingToQcpassrate.reduce((a, b) =>
       a.qc_pass_rate < b.qc_pass_rate ? a : b
     );
 

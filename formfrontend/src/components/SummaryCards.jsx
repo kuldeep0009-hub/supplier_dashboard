@@ -12,7 +12,7 @@ const SummaryCards = () => {
         console.error("Error fetching summary data:", err);
       });
   }, []);
-  
+  console.log(summary);
   if (!summary) {
   return <div>Loading summary...</div>;
 }
@@ -22,7 +22,7 @@ const SummaryCards = () => {
     {
       title: 'Best Performing Supplier',
       value: summary.bestSupplier.supplier_name || 'N/A',
-      subtitle: `${Math.round(summary.bestSupplier.predicted_supplier_score*100)/100} Performance Score`,
+      subtitle: `${Math.round(summary.bestSupplier.supplier_score*100)/100} Performance Score`,
       icon: Trophy,
       gradient: 'from-emerald-500 to-emerald-600',
       bgGradient: 'from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-emerald-800/20'
@@ -30,7 +30,7 @@ const SummaryCards = () => {
     {
       title: 'Most Flagged Product',
       value: summary.worstProduct.product_name || 'N?A',
-      subtitle: `${summary.worstProduct.qc_pass_rate*100}/100 Quality Score`,
+      subtitle: `${summary.worstProduct.qc_pass_rate}/100 Quality Score`,
       icon: AlertTriangle,
       gradient: 'from-amber-500 to-amber-600',
       bgGradient: 'from-amber-50 to-amber-100 dark:from-amber-900/20 dark:to-amber-800/20'
