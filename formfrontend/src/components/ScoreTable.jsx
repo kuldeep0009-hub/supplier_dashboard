@@ -14,15 +14,15 @@ useEffect(() => {
     });
 }, []);
 
-console.log(data);
+//console.log(data);
 const cleanedData = data.filter(item => item.region);
 const filteredData = cleanedData.filter((item) => {
     const matchSupplier = filters.supplier === 'All' || item.supplier_name?.toLowerCase() === filters.supplier.toLowerCase();
   const matchRegion = filters.region === 'All' || item.region?.toLowerCase() === filters.region.toLowerCase();
   const matchProduct = filters.product === 'All' || item.product_name?.toLowerCase() === filters.product.toLowerCase();
-  console.log("matchSupplier",matchSupplier);
-  console.log("matchRegion",matchRegion);
-  console.log("matchProduct",matchProduct);
+  // console.log("matchSupplier",matchSupplier);
+  // console.log("matchRegion",matchRegion);
+  // console.log("matchProduct",matchProduct);
   
   return matchSupplier && matchRegion && matchProduct;
   });

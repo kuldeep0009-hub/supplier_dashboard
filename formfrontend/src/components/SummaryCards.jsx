@@ -12,7 +12,7 @@ const SummaryCards = () => {
         console.error("Error fetching summary data:", err);
       });
   }, []);
-  console.log(summary);
+ // console.log(summary);
   if (!summary) {
   return <div>Loading summary...</div>;
 }
