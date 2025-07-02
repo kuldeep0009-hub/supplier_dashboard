@@ -118,7 +118,7 @@ supplier-dashboard/
 📧 Contact us at: [ayu.jha321@example.com]  
 🌐 [LinkedIn] · [GitHub]
 
-- **Prateek Pathak**  
+- **Raghav Sharan**  
 📧 Contact us at: [ayu.jha321@example.com]  
 🌐 [LinkedIn] · [GitHub]
 

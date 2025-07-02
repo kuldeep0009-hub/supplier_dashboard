@@ -5,16 +5,21 @@ import axiosInstance from '../api/axiosInstance';
 const GraphSection = () => {
   // Mock data for line chart visualization
   const [lineChartData, setLineChartData] = useState([]);
+  const [heatmapData, setHeatmapData] = useState([]);
+
   const [loading, setLoading] = useState(true);
   useEffect(()=>{
     const fetchGraphData = async ()=>{
       try{
-        const [lineRes] = await Promise.all(
-          [axiosInstance.get("/trends")]
+        const [lineRes,heatmapRes] = await Promise.all(
+          [axiosInstance.get("/trends"),
+            axiosInstance.get("/heatMapData/avg-region-scores")
+          ]
           
         );
         setLineChartData(lineRes.data); 
-        //console.log("lineres.data is",lineRes.data)
+        setHeatmapData(heatmapRes.data);
+        console.log("heatmapres .data is",heatmapRes.data)
 
       } catch(error){
         console.error('Error fetching graph data:', error);
@@ -40,19 +45,19 @@ const GraphSection = () => {
   // ];
 
   // Mock data for heatmap
-  const heatmapData = [
-    { region: 'Delhi', score: 92 },
-    { region: 'Mumbai', score: 88 },
-    { region: 'Bangalore', score: 94 },
-    { region: 'Chennai', score: 86 },
-    { region: 'Kolkata', score: 79 }
-  ];
+  // const heatmapData = [
+  //   { region: 'Delhi', score: 92 },
+  //   { region: 'Mumbai', score: 88 },
+  //   { region: 'Bangalore', score: 94 },
+  //   { region: 'Chennai', score: 86 },
+  //   { region: 'Kolkata', score: 79 }
+  // ];
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   const getScoreColor = (score) => {
     if (score >= 90) return 'bg-emerald-500';
     if (score >= 80) return 'bg-amber-500';
-    if (score >= 70) return 'bg-orange-500';
+    if (score >=70 ) return 'bg-orange-500';
     return 'bg-red-500';
   };
 
@@ -112,13 +117,13 @@ const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep
             <div className="flex-1 mx-4">
               <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
                 <div
-                  className={`h-full ${getScoreColor(data.score)} transition-all duration-500`}
-                  style={{ width: `${data.score}%` }}
+                  className={`h-full ${getScoreColor(data.avgScore)} transition-all duration-500`}
+                  style={{ width: `${data.avgScore}%` }}
                 />
               </div>
             </div>
             <span className="text-sm font-bold text-gray-900 dark:text-white min-w-[45px] text-right">
-              {data.score}%
+              {data.avgScore}%
             </span>
           </div>
         ))}
