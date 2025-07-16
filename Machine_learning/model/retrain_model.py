@@ -18,17 +18,17 @@ client = MongoClient(os.getenv("MONGO_URI"))
 db = client["supplier_db"]
 raw_collection = db["raw_data"]
 
-# Load full raw_data
+# Load data
 records = list(raw_collection.find())
 df = pd.DataFrame(records)
 df.drop(columns=["_id"], inplace=True, errors="ignore")
 
-# Drop rows without ground truth
+
 df["supplier_score"] = pd.to_numeric(df["supplier_score"], errors="coerce")
 df["supplier_rank"] = pd.to_numeric(df["supplier_rank"], errors="coerce")
 df = df.dropna(subset=["supplier_score", "supplier_rank"])
 
-# Load encoders
+#  encoders
 le_supplier = joblib.load("le_supplier.pkl")
 le_product_name = joblib.load("le_product_name.pkl")
 
@@ -56,4 +56,4 @@ X_all_processed = preprocess_data(X_all, fit=False)
 model = MultiOutputRegressor(GradientBoostingRegressor())
 model.fit(X_all_processed, y_all)
 joblib.dump(model, "multioutput_model.pkl")
-print("✅ Model trained and saved.")
+print(" Model trained and saved.")

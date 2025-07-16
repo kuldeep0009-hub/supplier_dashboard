@@ -6,7 +6,7 @@ import os
 from dotenv import load_dotenv
 
 def migrate_csv_to_mongo(csv_path, db_name="supplier_db", collection_name="raw_data"):
-    # 🔄 Load .env file
+    # Load .env file
     load_dotenv()
 
     

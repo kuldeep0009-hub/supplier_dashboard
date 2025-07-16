@@ -5,16 +5,16 @@ import joblib
 
 def preprocess_data(df: pd.DataFrame, fit=True):
     df = df.copy()
-    df.drop(columns=["purchase_date"], inplace=True, errors="ignore")  # safe drop
+    df.drop(columns=["purchase_date"], inplace=True, errors="ignore")  
 
-    # Define features
+    #  features
     categorical_features = ["region"]  # only region is one-hot encoded
     numerical_features = df.select_dtypes(include=['int64', 'float64']).columns.tolist()
 
-    # Remove target columns if present
+    # Remove target columns 
     numerical_features = [col for col in numerical_features if col not in ["supplier_score", "supplier_rank"]]
 
-    # Transformers
+    
     numeric_transformer = MinMaxScaler()
     oh_transformer = OneHotEncoder(drop='first', sparse_output=False)
 

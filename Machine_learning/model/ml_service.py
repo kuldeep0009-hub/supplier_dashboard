@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 import numpy as np
 
-# Setup
+
 load_dotenv()
 app = Flask(__name__)
 client = MongoClient(os.getenv("MONGO_URI"))
@@ -14,7 +14,7 @@ db = client["supplier_db"]
 raw_collection = db["raw_data"]
 output_collection = db["ml_outputs"]
 
-# Load model and preprocessing
+#  model and preprocessing
 model = joblib.load("multioutput_model.pkl")
 preprocessing = joblib.load("preprocessing_pipeline.pkl")
 le_supplier = joblib.load("le_supplier.pkl")
@@ -27,10 +27,10 @@ def predict():
     # ✅ Save raw input to raw_data
     raw_collection.insert_one(data)
 
-    # 🔄 Convert to DataFrame
+    # Convert to DataFrame
     df = pd.DataFrame([data])
 
-    # ✅ Extend encoders if new class
+    # Extend encoders if new class
     if df["supplier_name"].iloc[0] not in le_supplier.classes_:
         le_supplier.classes_ = np.append(le_supplier.classes_, df["supplier_name"].iloc[0])
         joblib.dump(le_supplier, "le_supplier.pkl")
@@ -39,7 +39,7 @@ def predict():
         le_product_name.classes_ = np.append(le_product_name.classes_, df["product_name"].iloc[0])
         joblib.dump(le_product_name, "le_product_name.pkl")
 
-    # 🔠 Encode
+    #  Encode
     df["supplier_name"] = le_supplier.transform(df["supplier_name"])
     df["product_name"] = le_product_name.transform(df["product_name"])
 
@@ -63,7 +63,7 @@ def predict():
     if "_id" in df.columns:
         df["_id"] = df["_id"].astype(str)
 
-    return jsonify({"message": "✅ Saved to raw_data & ml_outputs", "prediction": df.to_dict(orient="records")[0]}), 200
+    return jsonify({"message": " Saved to raw_data & ml_outputs", "prediction": df.to_dict(orient="records")[0]}), 200
 
 @app.route("/top_suppliers", methods=["GET"])
 def get_top_suppliers():
@@ -105,4 +105,4 @@ def get_top_suppliers():
     return jsonify(top_suppliers), 200
 
 if __name__ == "__main__":
-    app.run(port=int(os.getenv("PORT", 5000)), debug=True)
+    app.run(port=int(os.getenv("PORT", 5050)), debug=True)
