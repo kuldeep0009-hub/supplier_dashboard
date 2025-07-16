@@ -1,4 +1,4 @@
-// controllers/analyticsController.js
+
 import MLOutput from "../models/mlOutputModel.js";
 
 export const getAvgScoreByRegion = async (req, res) => {

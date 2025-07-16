@@ -50,7 +50,7 @@ export const getMonthlyPerformance = async (req, res) => {
 
     res.status(200).json(result);
   } catch (err) {
-    console.error("❌ Error fetching performance trend:", err);
+    console.error("Error fetching performance trend:", err);
     res.status(500).json({ error: err.message });
   }
 };

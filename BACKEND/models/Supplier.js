@@ -26,5 +26,5 @@ const supplierSchema = new mongoose.Schema({
   
 },{collection: 'ml_outputs'});
 
-// ✅ Force collection to 'ml_output'
+
 export default mongoose.model('Supplier', supplierSchema, 'ml_outputs');

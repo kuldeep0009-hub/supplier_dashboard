@@ -11,7 +11,7 @@ const mlOutputSchema = new mongoose.Schema({
   purchase_date: String,
   supplier_score: Number,
   supplier_rank: Number,
-}, { collection: 'ml_outputs' }); // 👈 this line forces it to use correct collection
+}, { collection: 'ml_outputs' }); 
 
 const MLOutput = mongoose.model("MLOutput", mlOutputSchema);
 

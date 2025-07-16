@@ -61,7 +61,7 @@ const SupplierDataForm = () => {
     setIsSubmitting(true);
 
     try {
-      await axios.post('http://localhost:5000/api/rawdata/add', formData);
+      await axios.post('/api/rawdata/add', formData);
       alert('Data successfully submitted to MongoDB!');
       resetForm();
       setIsFormOpen(false);

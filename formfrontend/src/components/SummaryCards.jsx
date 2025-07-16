@@ -6,7 +6,7 @@ const SummaryCards = () => {
   useEffect(() => {
     axiosInstance.get('/summary')
       .then((res) => {
-        setSummary(res.data); // Assuming res.data has keys: bestSupplier, worstProduct, avgScoreTrend
+        setSummary(res.data); 
       })
       .catch((err) => {
         console.error("Error fetching summary data:", err);

@@ -5,9 +5,9 @@ import axiosInstance from '../api/axiosInstance';
 const ScoreTable = ({filters}) => {
   const [data, setData] = useState([]);
 useEffect(() => {
-  axiosInstance.get('/suppliers') // replace with your actual endpoint
+  axiosInstance.get('/suppliers') 
     .then((res) => {
-      setData(res.data); // Adjust according to your actual API response
+      setData(res.data); 
     })
     .catch((err) => {
       console.error('Error fetching performance data:', err);

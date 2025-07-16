@@ -13,7 +13,7 @@ const rawDataSchema = new mongoose.Schema({
   units_returned: Number,
   return_rate: Number
 }, {
-  timestamps: true // will add createdAt and updatedAt fields
+  timestamps: true 
 });
 
 const RawData = mongoose.model('RawData', rawDataSchema,"raw_data");
